@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+    <item id="Title"><![CDATA[Discuz! Plugin]]></item>
+    <item id="Version"><![CDATA[]]></item>
+    <item id="Time"><![CDATA[2016-04-02 15:35]]></item>
+    <item id="From"><![CDATA[ ()]]></item>
+    <item id="Data">
+        <item id="plugin">
+            <item id="available"><![CDATA[1]]></item>
+            <item id="adminid"><![CDATA[0]]></item>
+            <item id="name"><![CDATA[ôÜÊÂ²É¼¯]]></item>
+            <item id="identifier"><![CDATA[htt_qsbk]]></item>
+            <item id="description"><![CDATA[²É¼¯Ð¦»°]]></item>
+            <item id="datatables"><![CDATA[]]></item>
+            <item id="directory"><![CDATA[htt_qsbk/]]></item>
+            <item id="copyright"><![CDATA[ÎâÎÄ¸¶]]></item>
+            <item id="version"><![CDATA[1.0]]></item>
+            <item id="__modules">
+                <item id="general">
+                    <item id="name"><![CDATA[htt_qsbk]]></item>
+                    <item id="displayorder"><![CDATA[0]]></item>
+                    <item id="menu"><![CDATA[]]></item>
+                    <item id="url"><![CDATA[]]></item>
+                    <item id="type"><![CDATA[11]]></item>
+                    <item id="adminid"><![CDATA[1]]></item>
+                    <item id="navtitle"><![CDATA[]]></item>
+                    <item id="navicon"><![CDATA[]]></item>
+                    <item id="navsubname"><![CDATA[]]></item>
+                    <item id="navsuburl"><![CDATA[]]></item>
+                </item>
+
+                <item id="1">
+                    <item id="name"><![CDATA[caiji]]></item>
+                    <item id="param"><![CDATA[]]></item>
+                    <item id="menu"><![CDATA[²É¼¯ÉèÖÃ]]></item>
+                    <item id="url"><![CDATA[]]></item>
+                    <item id="type"><![CDATA[7]]></item>
+                    <item id="adminid"><![CDATA[0]]></item>
+                    <item id="displayorder"><![CDATA[0]]></item>
+                    <item id="navtitle"><![CDATA[]]></item>
+                    <item id="navicon"><![CDATA[]]></item>
+                    <item id="navsubname"><![CDATA[]]></item>
+                    <item id="navsuburl"><![CDATA[]]></item>
+                </item>
+
+            </item>
+        </item>
+        <item id="version"><![CDATA[X3.2]]></item>
+
+        <item id="var">
+            <item id="0">
+                <item id="displayorder"><![CDATA[0]]></item>
+                <item id="title"><![CDATA[°æ¿éid]]></item>
+                <item id="description"><![CDATA[°æ¿éµÄ±àºÅ(fid),±ØÌî]]></item>
+                <item id="variable"><![CDATA[fid]]></item>
+                <item id="type"><![CDATA[number]]></item>
+                <item id="value"><![CDATA[0]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+
+            <item id="1">
+                <item id="displayorder"><![CDATA[1]]></item>
+                <item id="title"><![CDATA[±àÂëÉèÖÃ]]></item>
+                <item id="description"><![CDATA[³öÏÖÂÒÂëÊ±£¬ÇÐ»»¼´¿É]]></item>
+                <item id="variable"><![CDATA[charset]]></item>
+                <item id="type"><![CDATA[select]]></item>
+                <item id="value"><![CDATA[1]]></item>
+                <item id="extra"><![CDATA[1=utf-8
+2=gbk]]></item>
+            </item>
+
+        </item>
+		
+		<item id="language">
+			<item id="scriptlang">
+				<item id="error_forum"><![CDATA[²å¼þÉèÖÃ´íÎó:°æ¿éid²»´æÔÚ»òÕß°æ¿é×´Ì¬Òì³£]]></item>
+				<item id="error_curl"><![CDATA[²å¼þ¹¤×÷ÐèÒªcurlÄ£¿é]]></item>
+			</item>
+		</item>
+
+        <item id="installfile"><![CDATA[install.php]]></item>
+
+
+    </item>
+
+
+</root>
