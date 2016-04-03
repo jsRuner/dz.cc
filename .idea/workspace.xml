@@ -2,92 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea42b3a2-f561-4422-a900-b9999f78147d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/discuz_plugin_htt_qsbk.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/cron/cron_htt_qsbk.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/discuz_plugin_htt_qsbk.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/htt_qsbk.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Callback.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/DOMDocumentWrapper.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/DOMEvent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Exception.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Http/Client.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Http/Client/Adapter/Exception.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Http/Client/Adapter/Interface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Http/Client/Adapter/Proxy.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Http/Client/Adapter/Socket.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Http/Client/Adapter/Test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Http/Client/Exception.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Http/Cookie.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Http/CookieJar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Http/Exception.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Http/Response.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Json/Decoder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Json/Encoder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Json/Exception.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Loader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Registry.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Uri.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Uri/Exception.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Uri/Http.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Abstract.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Alnum.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Alpha.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Barcode.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Barcode/Ean13.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Barcode/UpcA.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Between.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Ccnum.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Date.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Digits.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/EmailAddress.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Exception.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/File/Count.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/File/Exists.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/File/Extension.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/File/FilesSize.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/File/ImageSize.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/File/MimeType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/File/NotExists.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/File/Size.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/File/Upload.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Float.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/GreaterThan.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Hex.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Hostname.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Hostname/At.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Hostname/Ch.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Hostname/De.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Hostname/Fi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Hostname/Hu.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Hostname/Interface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Hostname/Li.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Hostname/No.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Hostname/Se.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Identical.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/InArray.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Int.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Interface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Ip.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/LessThan.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/NotEmpty.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/Regex.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/Zend/Validate/StringLength.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/bootstrap.example.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/compat/mbstring.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/phpQueryEvents.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/phpQueryObject.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/plugins/Scripts.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/plugins/Scripts/__config.example.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/plugins/Scripts/example.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/plugins/Scripts/fix_webroot.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/plugins/Scripts/google_login.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/plugins/Scripts/print_source.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/plugins/Scripts/print_websafe.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/plugins/WebBrowser.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/include/phpQuery/phpQuery/plugins/example.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/template/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/log/201604_cplog.php" afterPath="$PROJECT_DIR$/data/log/201604_cplog.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/plugin/htt_qsbk/cron/cron_htt_qsbk.php" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/cron/cron_htt_qsbk.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/plugin/htt_qsbk/discuz_plugin_htt_qsbk.xml" afterPath="$PROJECT_DIR$/source/plugin/htt_qsbk/discuz_plugin_htt_qsbk.xml" />
     </list>
     <ignored path="dz.cc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,7 +27,18 @@
     <favorites_list name="dz.cc" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="cron_htt_qsbk.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/plugin/htt_qsbk/cron/cron_htt_qsbk.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.4944707">
+              <caret line="102" column="11" selection-start-line="102" selection-start-column="11" selection-end-line="102" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -119,8 +49,8 @@
         <option value="$PROJECT_DIR$/source/plugin/htt_qsbk/htt_qsbk.class.php" />
         <option value="$PROJECT_DIR$/source/function/function_filesock.php" />
         <option value="$PROJECT_DIR$/source/plugin/htt_qsbk/discuz_plugin_htt_qsbk.xml" />
-        <option value="$PROJECT_DIR$/source/plugin/htt_qsbk/cron/cron_htt_qsbk.php" />
         <option value="$PROJECT_DIR$/source/plugin/htt_qsbk/install.php" />
+        <option value="$PROJECT_DIR$/source/plugin/htt_qsbk/cron/cron_htt_qsbk.php" />
       </list>
     </option>
   </component>
@@ -128,6 +58,9 @@
   <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -176,20 +109,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dz.cc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dz.cc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dz.cc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -248,6 +167,9 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ea42b3a2-f561-4422-a900-b9999f78147d" name="Default" comment="" />
@@ -271,12 +193,13 @@
     <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2605178" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25458467" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949308" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19470046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34088457" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949308" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -285,10 +208,17 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21198156" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -495,13 +425,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/plugin/cloudstat/discuz_plugin_cloudstat.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.1844661">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/plugin/manyou/discuz_plugin_manyou.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.0922331">
@@ -530,24 +453,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/plugin/htt_qsbk/htt_qsbk.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03117207">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/plugin/dzapp_haodai/template/mobile/apply.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.533334">
           <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/plugin/dzapp_haodai/discuz_plugin_dzapp_haodai.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.6">
-          <caret line="145" column="27" selection-start-line="145" selection-start-column="27" selection-end-line="145" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -565,23 +474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/plugin/htt_qsbk/discuz_plugin_htt_qsbk.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.766666">
-          <caret line="76" column="53" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
-          <folding>
-            <element signature="n#item#2;n#item#4;n#root#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/function/function_core.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6164384">
-          <caret line="198" column="24" selection-start-line="198" selection-start-column="20" selection-end-line="198" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/plugin/dzapp_haodai/install.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-48.28767">
@@ -596,10 +488,172 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/plugin/htt_qsbk/discuz_plugin_htt_qsbk.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5386534">
+          <caret line="76" column="53" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/plugin/dzapp_haodai/discuz_plugin_dzapp_haodai.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.9476309">
+          <caret line="145" column="27" selection-start-line="145" selection-start-column="27" selection-end-line="145" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/plugin/cloudstat/discuz_plugin_cloudstat.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4937656">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/plugin/wechat/discuz_plugin_wechat.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.073566">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/plugin/cloudsearch/discuz_plugin_cloudsearch.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.776808">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/plugin/htt_qsbk/htt_qsbk.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46758103">
+          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/admincp/admincp_diytemplate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.4333334">
+          <caret line="210" column="20" selection-start-line="210" selection-start-column="8" selection-end-line="210" selection-end-column="20" />
+          <folding>
+            <marker date="1449542356000" expanded="true" signature="471:505" placeholder="..." />
+            <marker date="1449542356000" expanded="true" signature="696:708" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/function/function_core.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0666666">
+          <caret line="1984" column="16" selection-start-line="1984" selection-start-column="9" selection-end-line="1984" selection-end-column="16" />
+          <folding>
+            <marker date="1449542356000" expanded="true" signature="58287:58347" placeholder="SELECT COUNT..${DB::table($tablename)}..." />
+            <marker date="1449542356000" expanded="true" signature="64066:64144" placeholder="SELECT table..${DB::table('forum_attachment')}..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/admincp/admincp_forums.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.266667">
+          <caret line="409" column="40" selection-start-line="409" selection-start-column="40" selection-end-line="409" selection-end-column="40" />
+          <folding>
+            <marker date="1449542356000" expanded="true" signature="2206:2235" placeholder="..." />
+            <marker date="1449542356000" expanded="true" signature="21543:21551" placeholder="..." />
+            <marker date="1449542356000" expanded="true" signature="23041:23053" placeholder="..." />
+            <marker date="1449542356000" expanded="false" signature="89932:89944" placeholder="..." />
+            <marker date="1449542356000" expanded="true" signature="89989:91207" placeholder="..." />
+            <marker date="1449542356000" expanded="true" signature="90429:91064" placeholder="{...}" />
+            <marker date="1449542356000" expanded="true" signature="90554:91056" placeholder="{...}" />
+            <marker date="1449542356000" expanded="true" signature="90576:90692" placeholder="{...}" />
+            <marker date="1449542356000" expanded="true" signature="90995:91049" placeholder="{...}" />
+            <marker date="1449542356000" expanded="true" signature="94919:95315" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/class/discuz/discuz_table_archive.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.9333334">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+          <folding>
+            <marker date="1449542356000" expanded="true" signature="1791:1821" placeholder="SELECT COUNT..." />
+            <marker date="1449542356000" expanded="true" signature="2668:2772" placeholder="ALTER TABLE ..." />
+            <marker date="1449542356000" expanded="true" signature="3045:3113" placeholder="INSERT INTO ..." />
+            <marker date="1449542356000" expanded="true" signature="3191:3214" placeholder="SELECT COUNT..." />
+            <marker date="1449542356000" expanded="true" signature="3381:3457" placeholder="INSERT INTO ..." />
+            <marker date="1449542356000" expanded="true" signature="3528:3567" placeholder="DELETE FROM ..." />
+            <marker date="1449542356000" expanded="true" signature="3625:3638" placeholder="DROP TABLE %..." />
+            <marker date="1449542356000" expanded="true" signature="3698:3711" placeholder="DROP TABLE %..." />
+            <marker date="1449542356000" expanded="true" signature="4211:4263" placeholder="INSERT INTO ..." />
+            <marker date="1449542356000" expanded="true" signature="4341:4364" placeholder="SELECT COUNT..." />
+            <marker date="1449542356000" expanded="true" signature="4531:4607" placeholder="INSERT INTO ..." />
+            <marker date="1449542356000" expanded="true" signature="4678:4717" placeholder="DELETE FROM ..." />
+            <marker date="1449542356000" expanded="true" signature="4775:4788" placeholder="DROP TABLE %..." />
+            <marker date="1449542356000" expanded="true" signature="4848:4861" placeholder="DROP TABLE %..." />
+            <marker date="1449542356000" expanded="true" signature="4897:4910" placeholder="DROP TABLE %..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/class/table/table_common_member.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.6666665">
+          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+          <folding>
+            <marker date="1449542356000" expanded="true" signature="1775:1809" placeholder="SELECT * FRO..." />
+            <marker date="1449542356000" expanded="true" signature="2168:2207" placeholder="SELECT * FRO..." />
+            <marker date="1449542356000" expanded="true" signature="2600:2636" placeholder="SELECT uid F..." />
+            <marker date="1449542356000" expanded="true" signature="3308:3368" placeholder="SELECT * FRO..." />
+            <marker date="1449542356000" expanded="true" signature="3909:3939" placeholder="SELECT COUNT..." />
+            <marker date="1449542356000" expanded="true" signature="4170:4254" placeholder="SELECT * FRO..${DB::table($this-&gt;_table)}..." />
+            <marker date="1449542356000" expanded="true" signature="4385:4415" placeholder="SELECT DISTI..${DB::table($this-&gt;_table)}..." />
+            <marker date="1449542356000" expanded="true" signature="4553:4602" placeholder="SELECT * FRO..${DB::table($this-&gt;_table)}..." />
+            <marker date="1449542356000" expanded="true" signature="5368:5507" placeholder="SELECT uid, ..${DB::table($this-&gt;_table)}..." />
+            <marker date="1449542356000" expanded="true" signature="5615:5638" placeholder="SELECT COUNT..." />
+            <marker date="1449542356000" expanded="true" signature="5812:5833" placeholder="SELECT COUNT..${DB::table('common_connect_guest')}..." />
+            <marker date="1449542356000" expanded="true" signature="6029:6060" placeholder="SELECT * FRO..." />
+            <marker date="1449542356000" expanded="true" signature="6401:6426" placeholder="SELECT * FRO..." />
+            <marker date="1449542356000" expanded="true" signature="6808:6846" placeholder="SELECT COUNT..." />
+            <marker date="1449542356000" expanded="true" signature="7180:7219" placeholder="SELECT * FRO..." />
+            <marker date="1449542356000" expanded="true" signature="7433:7479" placeholder="SELECT COUNT..." />
+            <marker date="1449542356000" expanded="true" signature="7607:7664" placeholder="SELECT (MAX(..${DB::table($this-&gt;_table)}..." />
+            <marker date="1449542356000" expanded="true" signature="7758:7844" placeholder="SELECT COUNT..${DB::table($this-&gt;_table)}..." />
+            <marker date="1449542356000" expanded="true" signature="7927:7967" placeholder="SELECT COUNT..." />
+            <marker date="1449542356000" expanded="true" signature="8415:8772" placeholder="SELECT m.uid..${DB::table($this-&gt;_table)}..." />
+            <marker date="1449542356000" expanded="true" signature="11818:11906" placeholder="SELECT count..." />
+            <marker date="1449542356000" expanded="true" signature="12314:12410" placeholder="CREATE TABLE..${$temptablename}..." />
+            <marker date="1449542356000" expanded="true" signature="12484:12505" placeholder="SELECT COUNT..${$temptablename}..." />
+            <marker date="1449542356000" expanded="true" signature="12540:12703" placeholder="INSERT INTO ${$temptablename}..." />
+            <marker date="1449542356000" expanded="true" signature="12579:12604" placeholder="SELECT ms.ui..." />
+            <marker date="1449542356000" expanded="true" signature="12811:12832" placeholder="SELECT COUNT..${$temptablename}..." />
+            <marker date="1449542356000" expanded="true" signature="12990:13006" placeholder="SELECT uid F..${$temptablename}..." />
+            <marker date="1449542356000" expanded="true" signature="13173:13212" placeholder="DELETE FROM ..." />
+            <marker date="1449542356000" expanded="true" signature="14322:14333" placeholder="DROP TABLE $..." />
+            <marker date="1449542356000" expanded="true" signature="14766:14777" placeholder="DROP TABLE $..." />
+            <marker date="1449542356000" expanded="true" signature="15436:15476" placeholder="SELECT COUNT..." />
+            <marker date="1449542356000" expanded="true" signature="15792:15841" placeholder="SELECT s.* F..${implode(',', $fromarr)}..." />
+            <marker date="1449542356000" expanded="true" signature="16076:16418" placeholder="SELECT m.uid..${DB::table('common_member')}..." />
+            <marker date="1449542356000" expanded="true" signature="16759:16994" placeholder="SELECT m.uid..${DB::table('common_member')}..." />
+            <marker date="1449542356000" expanded="true" signature="17135:17413" placeholder="SELECT m.uid..." />
+            <marker date="1449542356000" expanded="true" signature="17720:17826" placeholder="SELECT uid, ..${DB::table('common_member_count')}..." />
+            <marker date="1449542356000" expanded="true" signature="18007:18243" placeholder="SELECT m.uid..${DB::table('common_member')}..." />
+            <marker date="1449542356000" expanded="true" signature="18511:18534" placeholder="SELECT MAX(u..." />
+            <marker date="1449542356000" expanded="true" signature="18635:18689" placeholder="SELECT * FRO..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/plugin/htt_qsbk/cron/cron_htt_qsbk.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.73301">
-          <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.4944707">
+          <caret line="102" column="11" selection-start-line="102" selection-start-column="11" selection-end-line="102" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>

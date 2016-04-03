@@ -51,15 +51,25 @@
             <item id="0">
                 <item id="displayorder"><![CDATA[0]]></item>
                 <item id="title"><![CDATA[版块id]]></item>
-                <item id="description"><![CDATA[版块的编号(fid),必填]]></item>
+                <item id="description"><![CDATA[版块的编号(fid),必填,格式为1或者1,2]]></item>
                 <item id="variable"><![CDATA[fid]]></item>
-                <item id="type"><![CDATA[number]]></item>
+                <item id="type"><![CDATA[text]]></item>
+                <item id="value"><![CDATA[0]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+			
+			<item id="1">
+                <item id="displayorder"><![CDATA[1]]></item>
+                <item id="title"><![CDATA[用户id]]></item>
+                <item id="description"><![CDATA[用户的编号(uid),必填,格式为1或1,2]]></item>
+                <item id="variable"><![CDATA[uid]]></item>
+                <item id="type"><![CDATA[text]]></item>
                 <item id="value"><![CDATA[0]]></item>
                 <item id="extra"><![CDATA[]]></item>
             </item>
 
-            <item id="1">
-                <item id="displayorder"><![CDATA[1]]></item>
+            <item id="2">
+                <item id="displayorder"><![CDATA[2]]></item>
                 <item id="title"><![CDATA[编码设置]]></item>
                 <item id="description"><![CDATA[出现乱码时，切换即可]]></item>
                 <item id="variable"><![CDATA[charset]]></item>

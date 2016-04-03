@@ -18,14 +18,30 @@ if (!defined('IN_DISCUZ')) {
 loadcache('plugin');
 
 $var = $_G['cache']['plugin'];
-$fid = $var['htt_qsbk']['fid'];
+$fidstr = $var['htt_qsbk']['fid'];
+$uidstr = $var['htt_qsbk']['uid'];
+
+
+$fids = explode(',',$fidstr);
+$uids = explode(',',$uidstr);
+
+
+
+
 $charset_num = $var['htt_qsbk']['charset'];  // 1表示utf-8 2表示gbk
+
+/*
 $forum = C::t('forum_forum')->fetch_info_by_fid($fid);
+
+
 if ($fid <= 0 || empty($forum) || $forum['status'] != 1) {
     //则显示错误信息。
     cpmsg(lang('plugin/htt_qsbk', 'error_forum'), '', 'error');
     return;
-}
+}*/
+
+
+
 function curl_qsbk()
 {
     $urls = array(
@@ -55,27 +71,51 @@ function curl_qsbk()
     curl_close($curl);
 
     if (empty($html)) {
-        //继续抓取内容。
         return curl_qsbk();
     }
     return $html;
-
 }
+
+
+
+
 if(function_exists('curl_init') && function_exists('curl_exec')) {
 
     $html = curl_qsbk();
 }else{
     cpmsg(lang('plugin/htt_qsbk', 'error_curl'), '', 'error');
 }
+
+
 include_once DISCUZ_ROOT . './source/plugin/htt_qsbk/include/phpQuery/phpQuery.php';
 phpquery::newDocumentHTML($html, 'utf-8');
 #获取段子列表。最外面那个。
 $articles = pq(".article");
+
+
+
 foreach ($articles as $article) {
     $data = array();
     $data['content'] = pq($article)->find(".content")->text();
-    $author = 'admin';
-    $uid = 1;
+
+
+//随机选择一个版块和用户。
+    $fid_key = array_rand($fids,1);
+    $uid_key = array_rand($uids,1);
+
+    $fid = $fids[$fid_key];
+    $uid = $uids[$uid_key];
+
+    $forum = C::t('forum_forum')->fetch_info_by_fid($fid);
+
+
+    $userinfo =C::t('common_member')->fetch($uid);
+
+
+    $author = $userinfo['username'];
+
+//    $author = 'admin';
+//    $uid = 1;
 
     //转换编码。如果不是utf-8。则需要转换。默认为utf-8
     if ($charset_num != 1) {
