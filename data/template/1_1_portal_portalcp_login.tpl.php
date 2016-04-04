@@ -1,6 +1,6 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); hookscriptoutput('portalcp_login');
 0
-|| checktplrefresh('./template/default/portal/portalcp_login.htm', './template/default/portal/portalcp_nav.htm', 1459756556, '1', './data/template/1_1_portal_portalcp_login.tpl.php', './template/default', 'portal/portalcp_login')
+|| checktplrefresh('./template/default/portal/portalcp_login.htm', './template/default/portal/portalcp_nav.htm', 1459762754, '1', './data/template/1_1_portal_portalcp_login.tpl.php', './template/default', 'portal/portalcp_login')
 ;?><?php include template('common/header'); ?><style type="text/css">
 .parentcat {}
 .cat { margin-left: 20px; }

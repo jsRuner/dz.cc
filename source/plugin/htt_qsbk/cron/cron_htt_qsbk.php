@@ -21,6 +21,14 @@ $var = $_G['cache']['plugin'];
 $fidstr = $var['htt_qsbk']['fid'];
 $uidstr = $var['htt_qsbk']['uid'];
 $threads = $var['htt_qsbk']['threads'];
+$caiji_img = $var['htt_qsbk']['caiji_img']; //1表示不采集带图片的糗事 2表示采集
+$check = $var['htt_qsbk']['check'];  //1表示不审核 2表示审核。
+
+//echo $caiji_img; //2
+
+//echo $check; //1
+
+
 
 
 if ($fidstr == '0' || $uidstr == '0') {
@@ -75,6 +83,7 @@ function curl_qsbk()
     $header[] = "Upgrade-Insecure-Requests:1";
     $header[] = "Connection: keep-alive";
     curl_setopt($curl, CURLOPT_HTTPHEADER, $header);
+//    curl_setopt($curl, CURLOPT_URL,'http://www.qiushibaike.com/pic/'); //设置请求地址
     curl_setopt($curl, CURLOPT_URL, $urls[$rand_keys]); //设置请求地址
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);  //是否输出 1 or true 是不输出 0  or false输出
     $html = curl_exec($curl); //执行curl操作
@@ -116,6 +125,28 @@ foreach ($articles as $article) {
     $data = array();
     $data['content'] = pq($article)->find(".content")->text();
 
+    $data['img'] = pq($article)->find(".thumb a img")->attr('src');
+
+    //如果图片存在。但插件设置不采集,值是1。则跳过本次。
+    if(!empty($data['img']) && $caiji_img == '1'){
+        continue;
+    }
+
+    //修改审核参数。-2
+    if($check == '2'){
+        $invisible = -2; //需要审核
+        $displayorder = -2; //显示顺序
+    }else{
+        $invisible = 0; //无须审核。
+        $displayorder = 0; //需要审核的帖子为-2
+    }
+
+//    echo $invisible;
+//
+//    echo $displayorder;
+//
+//    exit();
+
 
 //随机选择一个版块和用户。
     $fid_key = array_rand($fids,1);
@@ -144,8 +175,14 @@ foreach ($articles as $article) {
     $subject = cutstr($data['content'], 22, '');
     $publishdate = time();
 
+    if(!empty($data['img'])){
+        $message = $data['content']."[img]".$data['img']."[/img]";
+//        $bbcodeoff = '0'; //显示图片。
+    }else{
+        $message = $data['content'];
+//        $bbcodeoff = '-1';
+    }
 
-    $message = $data['content'];
 
     $newthread = array(
         'fid' => $fid,
@@ -160,7 +197,7 @@ foreach ($articles as $article) {
         'dateline' => $publishdate,
         'lastpost' => $publishdate,
         'lastposter' => $author,
-        'displayorder' => 0,
+        'displayorder' => $displayorder,
         'digest' => 0,
         'special' => 0,
         'attachment' => 0,
@@ -172,6 +209,19 @@ foreach ($articles as $article) {
     );
     //插入主题
     $tid = C::t('forum_thread')->insert($newthread, true);
+
+
+    if($check == '2'){
+
+        //插入审核表。
+        C::t('common_moderate')->insert('tid',array(
+            'id'=>$tid,
+            'status' => '0',
+            'dateline' => $publishdate,
+        ));
+        manage_addnotify('verifythread');
+    }
+
     //标记为新主题。
     C::t('forum_newthread')->insert(array(
         'tid' => $tid,
@@ -192,11 +242,11 @@ foreach ($articles as $article) {
         'message' => $message,
         'useip' => getglobal('clientip'),
         'port' => getglobal('remoteport'),
-        'invisible' => '0', //是否通过审核
+        'invisible' => $invisible, //是否通过审核
         'anonymous' => '0', //是否匿名
         'usesig' => '1', //是否启用签名
         'htmlon' => '0', //是否允许HTM
-        'bbcodeoff' => '-1', //是否允许BBCODE
+        'bbcodeoff' =>'0', //是否允许BBCODE
         'smileyoff' => '-1', //是否关闭表情
         'parseurloff' => '0', //是否允许粘贴URL
         'attachment' => '0',//附件
@@ -205,13 +255,26 @@ foreach ($articles as $article) {
         'status' => '0'//帖子状态
     ));
 
-    $subject = str_replace("\t", ' ', $subject);
-    $lastpost = "$tid\t" . $subject . "\t" . TIMESTAMP . "\t$author";
-    C::t('forum_forum')->update($fid, array('lastpost' => $lastpost));
-    C::t('forum_forum')->update_forum_counter($fid, 1, 1, 1);
-    //如果子论坛，还需要更新上级。
-    if ($forum['type'] == 'sub') {
-        C::t('forum_forum')->update($forum['fup'], array('lastpost' => $lastpost));
+
+
+    if($check == '2'){
+
+        C::t('forum_forum')->update_forum_counter($fid, 0, 0, 1);
+    }else{
+        $subject = str_replace("\t", ' ', $subject);
+        $lastpost = "$tid\t" . $subject . "\t" . TIMESTAMP . "\t$author";
+        C::t('forum_forum')->update($fid, array('lastpost' => $lastpost));
+        C::t('forum_forum')->update_forum_counter($fid, 1, 1, 1);
+
+        //如果子论坛，还需要更新上级。
+        if ($forum['type'] == 'sub') {
+            C::t('forum_forum')->update($forum['fup'], array('lastpost' => $lastpost));
+        }
     }
+
+    C::t('forum_sofa')->insert(array('tid' => $tid,'fid' => $forum['fid']));
+
+
+
 }
 ?>

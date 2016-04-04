@@ -224,6 +224,7 @@ class model_forum_thread extends discuz_model
 			}
 		}
 
+        //·¢ÌûÐèÒªÉóºË¡£
 		if($this->param['modnewthreads']) {
 			updatemoderate('tid', $this->tid);
 			C::t('forum_forum')->update_forum_counter($this->forum['fid'], 0, 0, 1);

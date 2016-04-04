@@ -91,9 +91,38 @@
                 <item id="value"><![CDATA[1]]></item>
                 <item id="extra"><![CDATA[1=utf-8
 2=gbk]]></item>
-            </item>
+
 
         </item>
+		
+		
+<item id="4">
+                <item id="displayorder"><![CDATA[4]]></item>
+                <item id="title"><![CDATA[图片过滤]]></item>
+                <item id="description"><![CDATA[如果图片链接被屏蔽，请选择不采集图片]]></item>
+                <item id="variable"><![CDATA[caiji_img]]></item>
+                <item id="type"><![CDATA[select]]></item>
+                <item id="value"><![CDATA[1]]></item>
+                <item id="extra"><![CDATA[1=不采集图片
+2=采集图片]]></item>
+</item>
+
+<item id="5">
+                <item id="displayorder"><![CDATA[5]]></item>
+                <item id="title"><![CDATA[审核设置]]></item>
+                <item id="description"><![CDATA[默认不审核,开启后则需要人工审核再发布]]></item>
+                <item id="variable"><![CDATA[check]]></item>
+                <item id="type"><![CDATA[select]]></item>
+                <item id="value"><![CDATA[1]]></item>
+                <item id="extra"><![CDATA[1=不审核
+2=审核]]></item>
+
+
+            </item>
+			
+			</item>
+		
+		
 		
 		<item id="language">
 			<item id="scriptlang">
