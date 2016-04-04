@@ -24,14 +24,18 @@ $threads = $var['htt_qsbk']['threads'];
 $caiji_img = $var['htt_qsbk']['caiji_img']; //1表示不采集带图片的糗事 2表示采集
 $check = $var['htt_qsbk']['check'];  //1表示不审核 2表示审核。
 
-//echo $caiji_img; //2
 
-//echo $check; //1
+//如果为0.则不执行后面的操作。不采集。
+if($threads == 0){
+    return;
+}
 
 
 
+$fids =array_filter(unserialize($fidstr));
+$uids = array_filter(explode(',',$uidstr));
 
-if ($fidstr == '0' || $uidstr == '0') {
+if ( is_null($fids) || empty($fids) || empty($uids)) {
     //则显示错误信息。
     cpmsg(lang('plugin/htt_qsbk', 'error_setting_fid_uid'), '', 'error');
 }
@@ -41,16 +45,6 @@ if ($threads<0 || $threads>20) {
     //则显示错误信息。
     cpmsg(lang('plugin/htt_qsbk', 'error_setting_threads'), '', 'error');
 }
-
-//如果为0.则不执行后面的操作。不采集。
-if($threads == 0){
-    return;
-}
-
-
-$fids = explode(',',$fidstr);
-$uids = explode(',',$uidstr);
-
 
 
 
@@ -83,7 +77,6 @@ function curl_qsbk()
     $header[] = "Upgrade-Insecure-Requests:1";
     $header[] = "Connection: keep-alive";
     curl_setopt($curl, CURLOPT_HTTPHEADER, $header);
-//    curl_setopt($curl, CURLOPT_URL,'http://www.qiushibaike.com/pic/'); //设置请求地址
     curl_setopt($curl, CURLOPT_URL, $urls[$rand_keys]); //设置请求地址
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);  //是否输出 1 or true 是不输出 0  or false输出
     $html = curl_exec($curl); //执行curl操作
@@ -211,16 +204,7 @@ foreach ($articles as $article) {
     $tid = C::t('forum_thread')->insert($newthread, true);
 
 
-    if($check == '2'){
 
-        //插入审核表。
-        C::t('common_moderate')->insert('tid',array(
-            'id'=>$tid,
-            'status' => '0',
-            'dateline' => $publishdate,
-        ));
-        manage_addnotify('verifythread');
-    }
 
     //标记为新主题。
     C::t('forum_newthread')->insert(array(
@@ -230,6 +214,7 @@ foreach ($articles as $article) {
     ));
 
     useractionlog($uid, 'tid');
+
     //插入post表。这里会执行2个表操作
     $pid = insertpost(array(
         'fid' => $fid,
@@ -255,11 +240,19 @@ foreach ($articles as $article) {
         'status' => '0'//帖子状态
     ));
 
-
-
     if($check == '2'){
-
+        updatemoderate('tid', $tid);
         C::t('forum_forum')->update_forum_counter($fid, 0, 0, 1);
+
+        //插入审核表。
+        C::t('common_moderate')->insert('tid',array(
+            'id'=>$tid,
+            'status' => '0',
+            'dateline' => $publishdate,
+        ));
+        //通知审核。
+        manage_addnotify('verifythread');
+        return ;
     }else{
         $subject = str_replace("\t", ' ', $subject);
         $lastpost = "$tid\t" . $subject . "\t" . TIMESTAMP . "\t$author";
@@ -271,10 +264,7 @@ foreach ($articles as $article) {
             C::t('forum_forum')->update($forum['fup'], array('lastpost' => $lastpost));
         }
     }
-
+    //沙发数据
     C::t('forum_sofa')->insert(array('tid' => $tid,'fid' => $forum['fid']));
-
-
-
 }
 ?>

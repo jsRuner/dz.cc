@@ -137,6 +137,7 @@ class model_forum_thread extends discuz_model
 			'closed' => $this->param['closed'] ? 1 : 0
 		);
 		$this->tid = C::t('forum_thread')->insert($newthread, true);
+
 		C::t('forum_newthread')->insert(array(
 		    'tid' => $this->tid,
 		    'fid' => $this->forum['fid'],
