@@ -41,7 +41,12 @@ class model_forum_post extends discuz_model {
 		}
 		$this->forum = &$this->app->var['forum'];
 		$this->thread = &$this->app->var['thread'];
+
+//        file_put_contents('1.txt',json_encode($_G['thread']));
+
 		$this->group = &$this->app->var['group'];
+
+
 	}
 
 	protected function _init_parameters($parameters) {
