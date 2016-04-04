@@ -20,6 +20,24 @@ loadcache('plugin');
 $var = $_G['cache']['plugin'];
 $fidstr = $var['htt_qsbk']['fid'];
 $uidstr = $var['htt_qsbk']['uid'];
+$threads = $var['htt_qsbk']['threads'];
+
+
+if ($fidstr == '0' || $uidstr == '0') {
+    //则显示错误信息。
+    cpmsg(lang('plugin/htt_qsbk', 'error_setting_fid_uid'), '', 'error');
+}
+
+
+if ($threads<0 || $threads>20) {
+    //则显示错误信息。
+    cpmsg(lang('plugin/htt_qsbk', 'error_setting_threads'), '', 'error');
+}
+
+//如果为0.则不执行后面的操作。不采集。
+if($threads == 0){
+    return;
+}
 
 
 $fids = explode(',',$fidstr);
@@ -30,15 +48,7 @@ $uids = explode(',',$uidstr);
 
 $charset_num = $var['htt_qsbk']['charset'];  // 1表示utf-8 2表示gbk
 
-/*
-$forum = C::t('forum_forum')->fetch_info_by_fid($fid);
 
-
-if ($fid <= 0 || empty($forum) || $forum['status'] != 1) {
-    //则显示错误信息。
-    cpmsg(lang('plugin/htt_qsbk', 'error_forum'), '', 'error');
-    return;
-}*/
 
 
 
@@ -93,8 +103,16 @@ phpquery::newDocumentHTML($html, 'utf-8');
 $articles = pq(".article");
 
 
+$count = 1;
 
 foreach ($articles as $article) {
+
+    //如果超过数量。则退出循环。
+    if($count > $threads){
+        break;
+    }
+    $count = $count+1;
+
     $data = array();
     $data['content'] = pq($article)->find(".content")->text();
 

@@ -14,7 +14,7 @@
             <item id="datatables"><![CDATA[]]></item>
             <item id="directory"><![CDATA[htt_qsbk/]]></item>
             <item id="copyright"><![CDATA[吴文付]]></item>
-            <item id="version"><![CDATA[1.0]]></item>
+            <item id="version"><![CDATA[1.1]]></item>
             <item id="__modules">
                 <item id="general">
                     <item id="name"><![CDATA[htt_qsbk]]></item>
@@ -67,9 +67,23 @@
                 <item id="value"><![CDATA[0]]></item>
                 <item id="extra"><![CDATA[]]></item>
             </item>
-
-            <item id="2">
+			
+			<item id="2">
                 <item id="displayorder"><![CDATA[2]]></item>
+                <item id="title"><![CDATA[数量]]></item>
+                <item id="description"><![CDATA[采集数量,必填,范围是0-20,默认20,为0则表示不采集]]></item>
+                <item id="variable"><![CDATA[threads]]></item>
+                <item id="type"><![CDATA[text]]></item>
+                <item id="value"><![CDATA[20]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+			
+			
+			
+			
+
+            <item id="3">
+                <item id="displayorder"><![CDATA[3]]></item>
                 <item id="title"><![CDATA[编码设置]]></item>
                 <item id="description"><![CDATA[出现乱码时，切换即可]]></item>
                 <item id="variable"><![CDATA[charset]]></item>
@@ -83,7 +97,8 @@
 		
 		<item id="language">
 			<item id="scriptlang">
-				<item id="error_forum"><![CDATA[插件设置错误:版块id不存在或者版块状态异常]]></item>
+				<item id="error_setting_fid_uid"><![CDATA[插件设置错误:版块id未设置或用户id未设置]]></item>
+				<item id="error_setting_threads"><![CDATA[插件设置错误:采集数量超出(0-20)范围]]></item>
 				<item id="error_curl"><![CDATA[插件工作需要curl模块]]></item>
 			</item>
 		</item>
