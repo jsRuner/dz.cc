@@ -5,10 +5,11 @@
  *    Date: 2016-4-2 16:24
  *    Warning: Don't delete this comment
  *
- *    cronname:ôÜÊÂ²É¼¯
+ *
+ *    cronname:htt_qsbk
  *    week:
  *    day:1
- *    hour:
+ *    hour:10
  *    minute:
  */
 

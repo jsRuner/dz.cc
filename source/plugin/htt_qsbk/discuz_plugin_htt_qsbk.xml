@@ -129,6 +129,7 @@
 				<item id="error_setting_fid_uid"><![CDATA[插件设置错误:版块未设置或用户id未设置]]></item>
 				<item id="error_setting_threads"><![CDATA[插件设置错误:采集数量超出(0-20)范围]]></item>
 				<item id="error_curl"><![CDATA[插件工作需要curl模块]]></item>
+				<item id="info_cronname"><![CDATA[糗事采集]]></item>
 			</item>
 		</item>
 
