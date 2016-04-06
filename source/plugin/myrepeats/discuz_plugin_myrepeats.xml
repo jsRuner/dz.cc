@@ -7,12 +7,15 @@
 			<item id="adminid"><![CDATA[1]]></item>
 			<item id="name"><![CDATA[我的马甲]]></item>
 			<item id="identifier"><![CDATA[myrepeats]]></item>
+			
 			<item id="description"><![CDATA[]]></item>
 			<item id="datatables"><![CDATA[]]></item>
+			
 			<item id="directory"><![CDATA[myrepeats/]]></item>
 			<item id="copyright"><![CDATA[Comsenz Inc.]]></item>
 			<item id="version"><![CDATA[2.4]]></item>
 			<item id="__modules">
+			
 				<item id="0">
 					<item id="name"><![CDATA[memcp]]></item>
 					<item id="menu"><![CDATA[我的马甲]]></item>
@@ -21,6 +24,7 @@
 					<item id="adminid"><![CDATA[0]]></item>
 					<item id="displayorder"><![CDATA[0]]></item>
 				</item>
+				
 				<item id="1">
 					<item id="name"><![CDATA[myrepeats]]></item>
 					<item id="menu"><![CDATA[]]></item>
@@ -29,6 +33,7 @@
 					<item id="adminid"><![CDATA[0]]></item>
 					<item id="displayorder"><![CDATA[0]]></item>
 				</item>
+				
 				<item id="2">
 					<item id="name"><![CDATA[admincp]]></item>
 					<item id="menu"><![CDATA[管理]]></item>
@@ -37,6 +42,7 @@
 					<item id="adminid"><![CDATA[1]]></item>
 					<item id="displayorder"><![CDATA[0]]></item>
 				</item>
+				
 			</item>
 		</item>
 		<item id="version"><![CDATA[X3.2]]></item>

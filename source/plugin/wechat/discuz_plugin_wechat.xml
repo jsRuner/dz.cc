@@ -52,6 +52,8 @@
 					<item id="navsubname"><![CDATA[]]></item>
 					<item id="navsuburl"><![CDATA[]]></item>
 				</item>
+				
+				
 				<item id="4">
 					<item id="name"><![CDATA[wsq_setting]]></item>
 					<item id="param"><![CDATA[]]></item>
@@ -65,6 +67,8 @@
 					<item id="navsubname"><![CDATA[]]></item>
 					<item id="navsuburl"><![CDATA[]]></item>
 				</item>
+				
+				
 				<item id="5">
 					<item id="name"><![CDATA[showactivity_setting]]></item>
 					<item id="param"><![CDATA[]]></item>

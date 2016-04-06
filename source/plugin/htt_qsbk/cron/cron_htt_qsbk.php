@@ -13,59 +13,46 @@
  *    minute:
  */
 
+
+
+
+
 if (!defined('IN_DISCUZ')) {
     exit('Access Denied');
 }
-loadcache('plugin');
-
-$var = $_G['cache']['plugin'];
-$fidstr = $var['htt_qsbk']['fid'];
-$uidstr = $var['htt_qsbk']['uid'];
-$threads = $var['htt_qsbk']['threads'];
-$caiji_img = $var['htt_qsbk']['caiji_img']; //1表示不采集带图片的糗事 2表示采集
-$check = $var['htt_qsbk']['check'];  //1表示不审核 2表示审核。
 
 
-//如果为0.则不执行后面的操作。不采集。
-if($threads == 0){
-    return;
+/**
+ * 判断 文件/目录 是否可写（取代系统自带的 is_writeable 函数）
+ *
+ * @param string $file 文件/目录
+ * @return boolean
+ */
+function new_is_writeable($file) {
+    if (is_dir($file)){
+        $dir = $file;
+        if ($fp = @fopen("$dir/test.txt", 'w')) {
+            @fclose($fp);
+            @unlink("$dir/test.txt");
+            $writeable = 1;
+        } else {
+            $writeable = 0;
+        }
+    } else {
+        if ($fp = @fopen($file, 'a+')) {
+            @fclose($fp);
+            $writeable = 1;
+        } else {
+            $writeable = 0;
+        }
+    }
+
+    return $writeable;
 }
 
-
-
-$fids =array_filter(unserialize($fidstr));
-$uids = array_filter(explode(',',$uidstr));
-
-if ( is_null($fids) || empty($fids) || empty($uids)) {
-    //则显示错误信息。
-    cpmsg(lang('plugin/htt_qsbk', 'error_setting_fid_uid'), '', 'error');
-}
-
-
-if ($threads<0 || $threads>20) {
-    //则显示错误信息。
-    cpmsg(lang('plugin/htt_qsbk', 'error_setting_threads'), '', 'error');
-}
-
-
-
-$charset_num = $var['htt_qsbk']['charset'];  // 1表示utf-8 2表示gbk
-
-
-
-
-
-function curl_qsbk()
+function curl_qsbk($url)
 {
-    $urls = array(
-        'hot' => "http://www.qiushibaike.com/text/",
-        'new' => "http://www.qiushibaike.com/textnew/",
-        'old' => "http://www.qiushibaike.com/history/",
-        '24h' => "http://www.qiushibaike.com/hot/",
-        '8h' => "http://www.qiushibaike.com/",
-    );
-    #从数组中随机取一个
-    $rand_keys = array_rand($urls, 1);
+
 //    $html = dfsockopen($urls[$rand_keys],$ip="");
 //    $html = dfsockopen('https://www.baidu.com/');
 //    echo $html;
@@ -78,7 +65,9 @@ function curl_qsbk()
     $header[] = "Upgrade-Insecure-Requests:1";
     $header[] = "Connection: keep-alive";
     curl_setopt($curl, CURLOPT_HTTPHEADER, $header);
-    curl_setopt($curl, CURLOPT_URL, $urls[$rand_keys]); //设置请求地址
+//    curl_setopt($curl, CURLOPT_URL, $urls[$rand_keys]); //设置请求地址
+//    curl_setopt($curl, CURLOPT_URL,'http://www.qiushibaike.com/pic/'); //设置请求地址
+    curl_setopt($curl, CURLOPT_URL,$url); //设置请求地址
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);  //是否输出 1 or true 是不输出 0  or false输出
     $html = curl_exec($curl); //执行curl操作
     curl_close($curl);
@@ -90,24 +79,111 @@ function curl_qsbk()
 }
 
 
+//file_put_contents(DISCUZ_ROOT.'./data/attachment/forum/htt_qsbk/'.time().'.png', file_get_contents('http://pic.qiushibaike.com/system/pictures/11584/115847722/medium/app115847722.jpg'));
+//
+//exit();
 
 
+
+loadcache('plugin');
+
+$var = $_G['cache']['plugin'];
+
+$fidstr = $var['htt_qsbk']['fids'];
+$uidstr = $var['htt_qsbk']['uids'];
+$groupstr = $var['htt_qsbk']['groups']; //用户组
+$threads = $var['htt_qsbk']['threads'];
+$charset_num = $var['htt_qsbk']['charset'];  // 1utf-8 2gbk
+$caiji_model = $var['htt_qsbk']['caiji_model']; //1纯文 2表示纯图 3图文
+$imgpath = $var['htt_qsbk']['imgpath']; //目录
+$check = $var['htt_qsbk']['check'];  //1不审核 2审核。
+$title_length = $var['htt_qsbk']['title_length']; //标题长度
+
+//如果采集数量为0.则不执行后面的操作。不采集。
+if($threads == 0){
+    return;
+}
+//
+//var_dump($var['htt_qsbk']);
+//exit();
+$fids =array_filter(unserialize($fidstr));
+if ( is_null($fids) || empty($fids)) {
+    //则显示错误信息。
+    cpmsg(lang('plugin/htt_qsbk', 'error_setting_fid'), '', 'error');
+}
+$uids = array_filter(explode(',',$uidstr));
+$groups = array_filter(unserialize($groupstr));
+//var_dump($groups);
+$members_bygroup = C::t('common_member')->fetch_all_by_groupid($groups);//该组的会员资料
+if(empty($uids)){
+    $uids = array();
+    foreach($members_bygroup as $item){
+        $uids[] = $item['uid'];
+    }
+}
+if(empty($uids)){
+    cpmsg(lang('plugin/htt_qsbk', 'error_setting_uid'), '', 'error');
+}
+
+//检查目录存在或者可写。非纯文模式且设置了路径才检查。
+if($caiji_model != 1 && !empty($imgpath) && !new_is_writeable($imgpath)){
+    cpmsg(lang('plugin/htt_qsbk', 'error_setting_imgpath'), '', 'error');
+}
+
+//检查是否超出范围。
+if ($threads<0 || $threads>20) {
+    //则显示错误信息。
+    cpmsg(lang('plugin/htt_qsbk', 'error_setting_threads'), '', 'error');
+}
+
+//数据源。
+$urls = array(
+    'text_hot' => "http://www.qiushibaike.com/text/",
+    'text_new' => "http://www.qiushibaike.com/textnew/",
+    'pic_hot'=>"http://www.qiushibaike.com/imgrank/",
+    'pic_new'=>"http://www.qiushibaike.com/pic/",
+    '24h' => "http://www.qiushibaike.com/hot/",
+    '8h' => "http://www.qiushibaike.com/",
+);
+
+switch($caiji_model){
+    case 1:
+        $urls = array(
+            'text_hot' => "http://www.qiushibaike.com/text/",
+            'text_new' => "http://www.qiushibaike.com/textnew/",
+        );
+        break;
+    case 2:
+        $urls = array(
+            'pic_hot'=>"http://www.qiushibaike.com/imgrank/",
+            'pic_new'=>"http://www.qiushibaike.com/pic/",
+        );
+        break;
+    default:
+        $urls = array(
+            '24h' => "http://www.qiushibaike.com/hot/",
+            '8h' => "http://www.qiushibaike.com/",
+        );
+        break;
+}
+
+#从数组中随机取一个
+$rand_keys = array_rand($urls, 1);
+$url = $urls[$rand_keys];
+
+//检查函数是否可用。
 if(function_exists('curl_init') && function_exists('curl_exec')) {
 
-    $html = curl_qsbk();
+    $html = curl_qsbk($url);
 }else{
     cpmsg(lang('plugin/htt_qsbk', 'error_curl'), '', 'error');
 }
-
-
+//解析数据
 include_once DISCUZ_ROOT . './source/plugin/htt_qsbk/include/phpQuery/phpQuery.php';
 phpquery::newDocumentHTML($html, 'utf-8');
 #获取段子列表。最外面那个。
 $articles = pq(".article");
-
-
-$count = 1;
-
+$count = 1; //计数
 foreach ($articles as $article) {
 
     //如果超过数量。则退出循环。
@@ -118,12 +194,23 @@ foreach ($articles as $article) {
 
     $data = array();
     $data['content'] = pq($article)->find(".content")->text();
-
     $data['img'] = pq($article)->find(".thumb a img")->attr('src');
 
-    //如果图片存在。但插件设置不采集,值是1。则跳过本次。
-    if(!empty($data['img']) && $caiji_img == '1'){
-        continue;
+    //纯文则不会有图片。无须判断
+    //纯图则需要判断。路径问题。
+    //图片存在,则必须采集。路径存在则进入下载。否则引入外链
+    if(!empty($data['img'])){
+        if(!empty($imgpath)){
+            $local_img = time().uniqid().'.png';
+            $context = stream_context_create(array(
+                'http' => array(
+                    'timeout' => 30 //超时时间，单位为秒
+                )
+            ));
+            @file_put_contents(DISCUZ_ROOT.'./'.$imgpath.$local_img, file_get_contents($data['img'],0,$context));
+            $data['img'] =$imgpath.$local_img;
+        }
+
     }
 
     //修改审核参数。-2
@@ -134,13 +221,6 @@ foreach ($articles as $article) {
         $invisible = 0; //无须审核。
         $displayorder = 0; //需要审核的帖子为-2
     }
-
-//    echo $invisible;
-//
-//    echo $displayorder;
-//
-//    exit();
-
 
 //随机选择一个版块和用户。
     $fid_key = array_rand($fids,1);
@@ -164,9 +244,13 @@ foreach ($articles as $article) {
     if ($charset_num != 1) {
         $data['content'] = iconv("UTF-8", "gbk", $data['content']);
     }
+    //控制标题的长度。存在内容。同时内容长度超过最大长度。则截取。
+    if(!empty($data['content'] && strlen($data['content']) > $title_length )){
 
-
-    $subject = cutstr($data['content'], 22, '');
+        $subject = cutstr($data['content'], $title_length, '');
+    }else {
+        $subject = $data['content'];
+    }
     $publishdate = time();
 
     if(!empty($data['img'])){

@@ -14,9 +14,10 @@
             <item id="datatables"><![CDATA[]]></item>
             <item id="directory"><![CDATA[htt_qsbk/]]></item>
             <item id="copyright"><![CDATA[吴文付]]></item>
-            <item id="version"><![CDATA[1.1]]></item>
+            <item id="version"><![CDATA[1.2]]></item>
             <item id="__modules">
-                <item id="general">
+			
+                <item id="0">
                     <item id="name"><![CDATA[htt_qsbk]]></item>
                     <item id="displayorder"><![CDATA[0]]></item>
                     <item id="menu"><![CDATA[]]></item>
@@ -28,20 +29,12 @@
                     <item id="navsubname"><![CDATA[]]></item>
                     <item id="navsuburl"><![CDATA[]]></item>
                 </item>
+				
 
-                <item id="1">
-                    <item id="name"><![CDATA[caiji]]></item>
-                    <item id="param"><![CDATA[]]></item>
-                    <item id="menu"><![CDATA[采集设置]]></item>
-                    <item id="url"><![CDATA[]]></item>
-                    <item id="type"><![CDATA[7]]></item>
-                    <item id="adminid"><![CDATA[0]]></item>
-                    <item id="displayorder"><![CDATA[0]]></item>
-                    <item id="navtitle"><![CDATA[]]></item>
-                    <item id="navicon"><![CDATA[]]></item>
-                    <item id="navsubname"><![CDATA[]]></item>
-                    <item id="navsuburl"><![CDATA[]]></item>
-                </item>
+               
+				
+				
+				
 
             </item>
         </item>
@@ -52,7 +45,7 @@
                 <item id="displayorder"><![CDATA[0]]></item>
                 <item id="title"><![CDATA[版块设置]]></item>
                 <item id="description"><![CDATA[版块设置,支持多选。禁止为空]]></item>
-                <item id="variable"><![CDATA[fid]]></item>
+                <item id="variable"><![CDATA[fids]]></item>
                 <item id="type"><![CDATA[forums]]></item>
                 <item id="value"><![CDATA[0]]></item>
                 <item id="extra"><![CDATA[]]></item>
@@ -62,7 +55,7 @@
                 <item id="displayorder"><![CDATA[1]]></item>
                 <item id="title"><![CDATA[用户id]]></item>
                 <item id="description"><![CDATA[用户的编号(uid),必填,格式为1或1,2形式的字符串。用户必须真实有效]]></item>
-                <item id="variable"><![CDATA[uid]]></item>
+                <item id="variable"><![CDATA[uids]]></item>
                 <item id="type"><![CDATA[text]]></item>
                 <item id="value"><![CDATA[1]]></item>
                 <item id="extra"><![CDATA[]]></item>
@@ -70,6 +63,19 @@
 			
 			<item id="2">
                 <item id="displayorder"><![CDATA[2]]></item>
+                <item id="title"><![CDATA[用户组]]></item>
+                <item id="description"><![CDATA[用户组设置,支持多选。如果已经设置用户则该设置自动无效]]></item>
+                <item id="variable"><![CDATA[groups]]></item>
+                <item id="type"><![CDATA[groups]]></item>
+                <item id="value"><![CDATA[1]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+			
+			
+			
+			
+			<item id="3">
+                <item id="displayorder"><![CDATA[3]]></item>
                 <item id="title"><![CDATA[数量]]></item>
                 <item id="description"><![CDATA[采集数量,必填,范围是0-20,默认20,为0则表示不采集]]></item>
                 <item id="variable"><![CDATA[threads]]></item>
@@ -82,8 +88,8 @@
 			
 			
 
-            <item id="3">
-                <item id="displayorder"><![CDATA[3]]></item>
+            <item id="4">
+                <item id="displayorder"><![CDATA[4]]></item>
                 <item id="title"><![CDATA[编码设置]]></item>
                 <item id="description"><![CDATA[出现乱码时，切换即可]]></item>
                 <item id="variable"><![CDATA[charset]]></item>
@@ -96,19 +102,32 @@
         </item>
 		
 		
-<item id="4">
-                <item id="displayorder"><![CDATA[4]]></item>
-                <item id="title"><![CDATA[图片过滤]]></item>
-                <item id="description"><![CDATA[如果图片链接被屏蔽，请选择不采集图片。图片是外链的糗百地址，非下载本地。]]></item>
-                <item id="variable"><![CDATA[caiji_img]]></item>
-                <item id="type"><![CDATA[select]]></item>
-                <item id="value"><![CDATA[1]]></item>
-                <item id="extra"><![CDATA[1=不采集图片
-2=采集图片]]></item>
-</item>
-
 <item id="5">
                 <item id="displayorder"><![CDATA[5]]></item>
+                <item id="title"><![CDATA[采集模式]]></item>
+                <item id="description"><![CDATA[当选择纯图或者图文模式时若图片存储目录为空,则图片以外链引入。反之则下载到本地。]]></item>
+                <item id="variable"><![CDATA[caiji_model]]></item>
+                <item id="type"><![CDATA[select]]></item>
+                <item id="value"><![CDATA[1]]></item>
+                <item id="extra"><![CDATA[1=纯文
+				2=纯图
+				3=图文]]></item>
+</item>
+
+
+<item id="6">
+                <item id="displayorder"><![CDATA[6]]></item>
+                <item id="title"><![CDATA[图片存储目录]]></item>
+                <item id="description"><![CDATA[图片存储目录,确保有写入权限,格式为data/attachment/forum/htt_qsbk/留空则表示不下载图片]]></item>
+                <item id="variable"><![CDATA[imgpath]]></item>
+                <item id="type"><![CDATA[text]]></item>
+                <item id="value"><![CDATA[data/attachment/forum/htt_qsbk/]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+
+
+<item id="7">
+                <item id="displayorder"><![CDATA[7]]></item>
                 <item id="title"><![CDATA[审核设置]]></item>
                 <item id="description"><![CDATA[默认不审核,开启后则需要人工审核再发布]]></item>
                 <item id="variable"><![CDATA[check]]></item>
@@ -120,16 +139,42 @@
 
             </item>
 			
+			
+			<item id="8">
+                <item id="displayorder"><![CDATA[8]]></item>
+                <item id="title"><![CDATA[标题最大长度]]></item>
+                <item id="description"><![CDATA[默认截取内容本身的前20字符作为标题,一个汉字算2个字符]]></item>
+                <item id="variable"><![CDATA[title_length]]></item>
+                <item id="type"><![CDATA[number]]></item>
+                <item id="value"><![CDATA[20]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+			
+			
+			
+			
+			
 			</item>
 		
 		
 		
 		<item id="language">
 			<item id="scriptlang">
-				<item id="error_setting_fid_uid"><![CDATA[插件设置错误:版块未设置或用户id未设置]]></item>
+				<item id="error_setting_fids"><![CDATA[插件设置错误:版块未设置]]></item>
+				<item id="error_setting_uids"><![CDATA[插件设置错误:用户未设置]]></item>
+				
+				<item id="error_setting_imgpath"><![CDATA[插件设置错误:图片路径不存在或者不可写]]></item>
+				
+				
 				<item id="error_setting_threads"><![CDATA[插件设置错误:采集数量超出(0-20)范围]]></item>
+				
+				
 				<item id="error_curl"><![CDATA[插件工作需要curl模块]]></item>
+				
 				<item id="info_cronname"><![CDATA[糗事采集]]></item>
+				
+				
+				
 			</item>
 		</item>
 
