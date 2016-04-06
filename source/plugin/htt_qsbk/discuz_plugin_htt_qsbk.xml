@@ -105,7 +105,7 @@
 <item id="5">
                 <item id="displayorder"><![CDATA[5]]></item>
                 <item id="title"><![CDATA[采集模式]]></item>
-                <item id="description"><![CDATA[当选择纯图或者图文模式时若图片存储目录为空,则图片以外链引入。反之则下载到本地。]]></item>
+                <item id="description"><![CDATA[纯文只采集文字糗事。纯图则只采集图片。其他的则随机]]></item>
                 <item id="variable"><![CDATA[caiji_model]]></item>
                 <item id="type"><![CDATA[select]]></item>
                 <item id="value"><![CDATA[1]]></item>
@@ -118,10 +118,10 @@
 <item id="6">
                 <item id="displayorder"><![CDATA[6]]></item>
                 <item id="title"><![CDATA[图片存储目录]]></item>
-                <item id="description"><![CDATA[图片存储目录,确保有写入权限,格式为data/attachment/forum/htt_qsbk/留空则表示不下载图片]]></item>
+                <item id="description"><![CDATA[图片存储目录,确保有写入权限,格式为data/attachment/forum/htt_qsbk/默认留空,不下载图片，而是引用图片的外链]]></item>
                 <item id="variable"><![CDATA[imgpath]]></item>
                 <item id="type"><![CDATA[text]]></item>
-                <item id="value"><![CDATA[data/attachment/forum/htt_qsbk/]]></item>
+                <item id="value"><![CDATA[]]></item>
                 <item id="extra"><![CDATA[]]></item>
             </item>
 
@@ -171,14 +171,22 @@
 				
 				<item id="error_curl"><![CDATA[插件工作需要curl模块]]></item>
 				
-				<item id="info_cronname"><![CDATA[糗事采集]]></item>
+				
 				
 				
 				
 			</item>
+			
+			
+			<item id="installlang">
+					<item id="info_cronname"><![CDATA[每日糗事采集计划]]></item>
+			</item>
+			
+			
 		</item>
 
         <item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
 
 
     </item>
