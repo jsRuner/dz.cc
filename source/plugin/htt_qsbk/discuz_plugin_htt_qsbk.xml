@@ -160,8 +160,8 @@
 		
 		<item id="language">
 			<item id="scriptlang">
-				<item id="error_setting_fids"><![CDATA[插件设置错误:版块未设置]]></item>
-				<item id="error_setting_uids"><![CDATA[插件设置错误:用户未设置]]></item>
+				<item id="error_setting_fid"><![CDATA[插件设置错误:版块未设置]]></item>
+				<item id="error_setting_uid"><![CDATA[插件设置错误:用户未设置]]></item>
 				
 				<item id="error_setting_imgpath"><![CDATA[插件设置错误:图片路径不存在或者不可写]]></item>
 				

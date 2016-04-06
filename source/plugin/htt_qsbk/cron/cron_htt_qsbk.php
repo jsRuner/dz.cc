@@ -22,6 +22,7 @@ if (!defined('IN_DISCUZ')) {
 }
 
 
+
 /**
  * 判断 文件/目录 是否可写（取代系统自带的 is_writeable 函数）
  *
@@ -53,11 +54,6 @@ function new_is_writeable($file) {
 function curl_qsbk($url)
 {
 
-//    $html = dfsockopen($urls[$rand_keys],$ip="");
-//    $html = dfsockopen('https://www.baidu.com/');
-//    echo $html;
-//    exit();
-
     $curl = curl_init(); //开启curl
     $header[] = "User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0";
     $header[] = "Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8";
@@ -78,13 +74,6 @@ function curl_qsbk($url)
     return $html;
 }
 
-
-//file_put_contents(DISCUZ_ROOT.'./data/attachment/forum/htt_qsbk/'.time().'.png', file_get_contents('http://pic.qiushibaike.com/system/pictures/11584/115847722/medium/app115847722.jpg'));
-//
-//exit();
-
-
-
 loadcache('plugin');
 
 $var = $_G['cache']['plugin'];
@@ -103,32 +92,40 @@ $title_length = $var['htt_qsbk']['title_length']; //标题长度
 if($threads == 0){
     return;
 }
-//
-//var_dump($var['htt_qsbk']);
-//exit();
 $fids =array_filter(unserialize($fidstr));
 if ( is_null($fids) || empty($fids)) {
     //则显示错误信息。
     cpmsg(lang('plugin/htt_qsbk', 'error_setting_fid'), '', 'error');
 }
+
 $uids = array_filter(explode(',',$uidstr));
+
 $groups = array_filter(unserialize($groupstr));
-//var_dump($groups);
 $members_bygroup = C::t('common_member')->fetch_all_by_groupid($groups);//该组的会员资料
-if(empty($uids)){
+
+
+if( empty($uidstr)){
     $uids = array();
     foreach($members_bygroup as $item){
         $uids[] = $item['uid'];
     }
 }
+
+
 if(empty($uids)){
     cpmsg(lang('plugin/htt_qsbk', 'error_setting_uid'), '', 'error');
 }
 
 //检查目录存在或者可写。非纯文模式且设置了路径才检查。
 if($caiji_model != 1 && !empty($imgpath) && !new_is_writeable($imgpath)){
-    cpmsg(lang('plugin/htt_qsbk', 'error_setting_imgpath'), '', 'error');
+    //尝试自动创建目录。如果失败，给出提示。
+    $res=mkdir(iconv("UTF-8", "GBK", $imgpath),0777,true);
+    if (!$res){
+        cpmsg(lang('plugin/htt_qsbk', 'error_setting_imgpath'), '', 'error');
+    }
 }
+
+
 
 //检查是否超出范围。
 if ($threads<0 || $threads>20) {
@@ -211,6 +208,10 @@ foreach ($articles as $article) {
             $data['img'] =$imgpath.$local_img;
         }
 
+        $attachment = 2; //附件,0无附件 1普通附件 2有图片附件
+
+    }else{
+        $attachment = 0; //附件,0无附件 1普通附件 2有图片附件
     }
 
     //修改审核参数。-2
@@ -278,7 +279,7 @@ foreach ($articles as $article) {
         'displayorder' => $displayorder,
         'digest' => 0,
         'special' => 0,
-        'attachment' => 0,
+        'attachment' => $attachment,
         'moderated' => 0,
         'status' => 32,
         'isgroup' => 0,
