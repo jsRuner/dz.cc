@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="mobile-agent" content="format=html5;url=http://www.waduanzi.com/mobile/video/page/4" />
+<meta name="description" content="热门视频 - 最新搞笑视频、爆笑视频精选" />
+<meta name="keywords" content="搞笑视频,爆笑视频,热门搞笑视频" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link title="挖段子网 » 挖视频 Feed" rel="alternate" type="application/rss+xml" href="http://feed.waduanzi.com/video" />
+<link title="挖段子网 » Feed" rel="alternate" type="application/rss+xml" href="http://www.waduanzi.com/feed" />
+<link rel="stylesheet" type="text/css" href="http://static.waduanzi.com/styles/cd-all.min.css?t=20140718001" />
+<script type="text/javascript" src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<title>热门视频 - 最新搞笑视频、爆笑视频</title>
+<meta name="renderer" content="webkit" />
+<meta name="author" content="waduanzi.com" />
+<meta name="copyright" content="Copyright (c) 2011-2013 waduanzi.com All Rights Reserved." />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="application-name" content="挖段子网"/>
+<meta name="msapplication-TileColor" content="#0c95f0"/>
+<meta name="msapplication-TileImage" content="35c7b7b9-f757-4e10-83a9-d18cc277e4da.png"/>
+<script type="text/javascript">var wdz_logined =0;var wdz_quick_login_url ='http://www.waduanzi.com/quicklogin';var _hmt =_hmt ||[];_hmt &&_hmt.push(['_setCustomVar',1,'guest',1,2]);</script>
+<script type="text/javascript" src="http://cbjs.baidu.com/js/m.js"></script>
+<script src="http://dup.baidustatic.com/js/ds.js"></script></head>
+<body>
+<div class="cd-mini-nav">
+<ul class="fleft">
+<li><a href="http://www.waduanzi.com/mobile">手机版</a></li>
+<li><a href="http://itunes.apple.com/cn/app/id486268988?mt=8" target="_blank">iPhone应用</a></li>
+<li><a href="http://static.waduanzi.com/android/waduanzi.apk" target="_blank">安卓应用</a></li>
+<li><a href="http://e.weibo.com/cdcchen" title="新浪微博" target="_blank">新浪微博</a></li>
+</ul>
+<ul class="fright" id="user-mini-nav">
+<li><a href="http://www.waduanzi.com/signup?url=http%3A%2F%2Fwww.waduanzi.com%2Fvideo%3Fpage%3D4">注册</a></li><li class="user-login"><a class="fleft" href="http://www.waduanzi.com/login?url=http%3A%2F%2Fwww.waduanzi.com%2Fvideo%3Fpage%3D4">登录</a></li> </ul>
+<div class="clear"></div>
+</div>
+<div class="cd-header">
+<div class="cd-wrapper cd-header-inner">
+<div id="site-logo" class="logo fleft">
+<a href="http://www.waduanzi.com/" title="点击返回首页">
+<img src="http://static.waduanzi.com/images/logo.jpg" alt="网站LOGO" title="返回首页" align="top" width="45" height="45" /><h1>挖段子</h1>
+<h2>挖段子网永久唯一域名：http://www.waduanzi.com</h2>
+</a>
+</div>
+<ul class="channel-nav fleft">
+<li class="top-menu"><a href="http://www.waduanzi.com/latest">刚出炉</a></li>
+<li class="top-menu">
+<a href="/hot" class="site-bg dropmenu">最热门</a>
+<ul class="submenu">
+<li><a href="/day">24小时内</a></li>
+<li><a href="/week">一周内</a></li>
+<li><a href="/month">一月内</a></li>
+</ul>
+</li>
+<li class="top-menu"><div class="menu-divider"></div></li>
+<li class="top-menu"><a href="/joke">幽默笑话</a></li>
+<li class="top-menu"><a href="/lengtu">搞笑图片</a></li>
+<li class="top-menu"><a href="/focus">猎奇八卦</a></li>
+<li class="top-menu"><a class="active" href="/video">热门视频</a></li>
+<li class="top-menu"><div class="menu-divider"></div></li>
+<li class="top-menu"><a href="http://www.waduanzi.com/post/publish">投稿</a></li>
+</ul>
+<ul class="channel-nav fright">
+</ul>
+<div class="clear"></div>
+</div>
+</div>
+<div class="cd-wrapper cd-main">
+<script type="text/javascript"><!--
+_hmt &&_hmt.push(['_setCustomVar',2,'channel_id',140,3]);</script>
+<div class="fleft cd-container">
+<script type="text/javascript" src="http://player.youku.com/jsapi"></script>
+<div class="panel panel10 bottom15px">
+<div class="app-online"><a href="http://www.waduanzi.com/apps/index" target="_blank">挖段子iPhone应用3.3.0涨姿势版全新上线！！</a></div>
+<ul class="hot-keyword">
+<li><span class="cred announce">24小时更新：90篇，&nbsp;QQ群：49401589</span></li>
+</ul>
+<div class="clear"></div>
+</div>
+<div class="post-line-list">
+<div class="panel panel20 post-item post-box">
+<div class="post-author">
+<img target="_blank" src="http://img01.waduanzi.com/avatars/2013/06/18/original_20130618123242_51bfe2eaa4de5.jpeg!savatar" alt="笑料百科" /> <a target="_blank" href="http://www.waduanzi.com/u/66">笑料百科</a> </div>
+<div class="item-detail">
+<h2 class="item-title"><a class="cd-title-link" target="_blank" title="台球沙地拉力赛，看完有种奇怪的满足感" href="http://www.waduanzi.com/archives/132927">台球沙地拉力赛，看完有种奇怪的满足感</a></h2>
+<div class="post-video"><div id="youkuplayer-XMTQ4NDY3NTc2MA=="></div><script type="text/javascript">var player =new YKU.Player('youkuplayer-XMTQ4NDY3NTc2MA==',{client_id:'1f2d57f9b5ea2ce9',vid:'XMTQ4NDY3NTc2MA==',width:600,height:400,autoplay:false});</script></div>
+<div class="item-content">台球沙地拉力赛，看完有种奇怪的满足感</div>
+</div>
+<div class="item-toolbar">
+<ul>
+<li class="fleft"><a rel="nofollow" href="javascript:void(0);" class="upscore site-bg" data-id="132927" data-score="1" data-url="http://www.waduanzi.com/post/score">1344</a></li>
+<li class="fleft"><a rel="nofollow" href="javascript:void(0);" class="downscore site-bg" data-id="132927" data-score="-1" data-url="http://www.waduanzi.com/post/score">-10</a></li>
+<li class="fright"><a rel="nofollow" href="javascript:void(0);" class="share site-bg">分享</a></li>
+<li class="fright"><a href="http://www.waduanzi.com/archives/132927#comments" data-url="http://www.waduanzi.com/comment/list1/id/132927" class="comment site-bg">吐槽</a></li>
+<li class="fright"><a rel="nofollow" href="javascript:void(0);" class="favorite site-bg" data-id="132927" data-url="http://www.waduanzi.com/post/like/id/132927">收藏</a></li>
+<div class="clear"></div>
+</ul>
+<div class="sharebox">
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" data="">
+<a class="bds_renren">人人网</a>
+<a class="bds_sqq">QQ好友</a>
+<a class="bds_huaban">花瓣网</a>
+<a class="bds_tqq">腾讯微博</a>
+<a class="bds_qzone">QQ空间</a>
+<a class="bds_tsina">新浪微博</a>
+<div class="arrow site-bg"></div>
+</div>
+</div>
+</div>
+<div class="comment-list comment-list-132927 hide"></div>
+</div>
+<div class="site-bg item-shadow"></div>
+<div class="panel panel20 post-item post-box">
+<div class="post-author">
+<img target="_blank" src="http://img01.waduanzi.com/avatars/2013/06/18/original_20130618123214_51bfe2ce85358.jpeg!savatar" alt="糗事万科" /> <a target="_blank" href="http://www.waduanzi.com/u/68">糗事万科</a> </div>
+<div class="item-detail">
+<h2 class="item-title"><a class="cd-title-link" target="_blank" title="一看就是亲爹！" href="http://www.waduanzi.com/archives/132929">一看就是亲爹！</a></h2>
+<div class="post-video"><div id="youkuplayer-XMTQ4NDY3ODE5Ng=="></div><script type="text/javascript">var player =new YKU.Player('youkuplayer-XMTQ4NDY3ODE5Ng==',{client_id:'1f2d57f9b5ea2ce9',vid:'XMTQ4NDY3ODE5Ng==',width:600,height:400,autoplay:false});</script></div>
+<div class="item-content">一看就是亲爹！</div>
+</div>
+<div class="item-toolbar">
+<ul>
+<li class="fleft"><a rel="nofollow" href="javascript:void(0);" class="upscore site-bg" data-id="132929" data-score="1" data-url="http://www.waduanzi.com/post/score">1002</a></li>
+<li class="fleft"><a rel="nofollow" href="javascript:void(0);" class="downscore site-bg" data-id="132929" data-score="-1" data-url="http://www.waduanzi.com/post/score">-6</a></li>
+<li class="fright"><a rel="nofollow" href="javascript:void(0);" class="share site-bg">分享</a></li>
+<li class="fright"><a href="http://www.waduanzi.com/archives/132929#comments" data-url="http://www.waduanzi.com/comment/list1/id/132929" class="comment site-bg">吐槽</a></li>
+<li class="fright"><a rel="nofollow" href="javascript:void(0);" class="favorite site-bg" data-id="132929" data-url="http://www.waduanzi.com/post/like/id/132929">收藏</a></li>
+<div class="clear"></div>
+</ul>
+<div class="sharebox">
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" data="">
+<a class="bds_renren">人人网</a>
+<a class="bds_sqq">QQ好友</a>
+<a class="bds_huaban">花瓣网</a>
+<a class="bds_tqq">腾讯微博</a>
+<a class="bds_qzone">QQ空间</a>
+<a class="bds_tsina">新浪微博</a>
+<div class="arrow site-bg"></div>
+</div>
+</div>
+</div>
+<div class="comment-list comment-list-132929 hide"></div>
+</div>
+<div class="site-bg item-shadow"></div>
+<div class="panel panel20 post-item post-box">
+<div class="post-author">
+<img target="_blank" src="http://img01.waduanzi.com/avatars/2013/06/18/original_20130618122950_51bfe23e6f19c.jpeg!savatar" alt="echo小茵茵" /> <a target="_blank" href="http://www.waduanzi.com/u/72">echo小茵茵</a> </div>
+<div class="item-detail">
+<h2 class="item-title"><a class="cd-title-link" target="_blank" title="鸡毛请路上的小盆友解释“什么是爱？”" href="http://www.waduanzi.com/archives/132894">鸡毛请路上的小盆友解释“什么是爱？”</a></h2>
+<div class="post-video"><div id="youkuplayer-XMTQ4NDAxNDcxMg=="></div><script type="text/javascript">var player =new YKU.Player('youkuplayer-XMTQ4NDAxNDcxMg==',{client_id:'1f2d57f9b5ea2ce9',vid:'XMTQ4NDAxNDcxMg==',width:600,height:400,autoplay:false});</script></div>
+<div class="item-content">鸡毛请路上的小盆友解释“什么是爱？”</div>
+</div>
+<div class="item-toolbar">
+<ul>
+<li class="fleft"><a rel="nofollow" href="javascript:void(0);" class="upscore site-bg" data-id="132894" data-score="1" data-url="http://www.waduanzi.com/post/score">1197</a></li>
+<li class="fleft"><a rel="nofollow" href="javascript:void(0);" class="downscore site-bg" data-id="132894" data-score="-1" data-url="http://www.waduanzi.com/post/score">-10</a></li>
+<li class="fright"><a rel="nofollow" href="javascript:void(0);" class="share site-bg">分享</a></li>
+<li class="fright"><a href="http://www.waduanzi.com/archives/132894#comments" data-url="http://www.waduanzi.com/comment/list1/id/132894" class="comment site-bg">吐槽</a></li>
+<li class="fright"><a rel="nofollow" href="javascript:void(0);" class="favorite site-bg" data-id="132894" data-url="http://www.waduanzi.com/post/like/id/132894">收藏</a></li>
+<div class="clear"></div>
+</ul>
+<div class="sharebox">
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" data="">
+<a class="bds_renren">人人网</a>
+<a class="bds_sqq">QQ好友</a>
+<a class="bds_huaban">花瓣网</a>
+<a class="bds_tqq">腾讯微博</a>
+<a class="bds_qzone">QQ空间</a>
+<a class="bds_tsina">新浪微博</a>
+<div class="arrow site-bg"></div>
+</div>
+</div>
+</div>
+<div class="comment-list comment-list-132894 hide"></div>
+</div>
+<div class="site-bg item-shadow"></div>
+<div class="panel panel20 post-item post-box">
+<div class="post-author">
+<img target="_blank" src="http://img01.waduanzi.com/avatars/2013/06/18/original_20130618123214_51bfe2ce85358.jpeg!savatar" alt="糗事万科" /> <a target="_blank" href="http://www.waduanzi.com/u/68">糗事万科</a> </div>
+<div class="item-detail">
+<h2 class="item-title"><a class="cd-title-link" target="_blank" title="非洲孩子第一次见到无人机" href="http://www.waduanzi.com/archives/132896">非洲孩子第一次见到无人机</a></h2>
+<div class="post-video"><div id="youkuplayer-XMTQ4NDAwNjM0NA=="></div><script type="text/javascript">var player =new YKU.Player('youkuplayer-XMTQ4NDAwNjM0NA==',{client_id:'1f2d57f9b5ea2ce9',vid:'XMTQ4NDAwNjM0NA==',width:600,height:400,autoplay:false});</script></div>
+<div class="item-content">非洲孩子第一次见到无人机</div>
+</div>
+<div class="item-toolbar">
+<ul>
+<li class="fleft"><a rel="nofollow" href="javascript:void(0);" class="upscore site-bg" data-id="132896" data-score="1" data-url="http://www.waduanzi.com/post/score">874</a></li>
+<li class="fleft"><a rel="nofollow" href="javascript:void(0);" class="downscore site-bg" data-id="132896" data-score="-1" data-url="http://www.waduanzi.com/post/score">-12</a></li>
+<li class="fright"><a rel="nofollow" href="javascript:void(0);" class="share site-bg">分享</a></li>
+<li class="fright"><a href="http://www.waduanzi.com/archives/132896#comments" data-url="http://www.waduanzi.com/comment/list1/id/132896" class="comment site-bg">吐槽</a></li>
+<li class="fright"><a rel="nofollow" href="javascript:void(0);" class="favorite site-bg" data-id="132896" data-url="http://www.waduanzi.com/post/like/id/132896">收藏</a></li>
+<div class="clear"></div>
+</ul>
+<div class="sharebox">
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" data="">
+<a class="bds_renren">人人网</a>
+<a class="bds_sqq">QQ好友</a>
+<a class="bds_huaban">花瓣网</a>
+<a class="bds_tqq">腾讯微博</a>
+<a class="bds_qzone">QQ空间</a>
+<a class="bds_tsina">新浪微博</a>
+<div class="arrow site-bg"></div>
+</div>
+</div>
+</div>
+<div class="comment-list comment-list-132896 hide"></div>
+</div>
+<div class="site-bg item-shadow"></div>
+<div class="panel panel20 post-item post-box">
+<div class="post-author">
+<img target="_blank" src="http://img01.waduanzi.com/avatars/2013/06/18/original_20130618123242_51bfe2eaa4de5.jpeg!savatar" alt="笑料百科" /> <a target="_blank" href="http://www.waduanzi.com/u/66">笑料百科</a> </div>
+<div class="item-detail">
+<h2 class="item-title"><a class="cd-title-link" target="_blank" title="天津妞盘点：女特工的禁忌诱惑" href="http://www.waduanzi.com/archives/132897">天津妞盘点：女特工的禁忌诱惑</a></h2>
+<div class="post-video"><div id="youkuplayer-XMTQ4Mzg4OTIyMA=="></div><script type="text/javascript">var player =new YKU.Player('youkuplayer-XMTQ4Mzg4OTIyMA==',{client_id:'1f2d57f9b5ea2ce9',vid:'XMTQ4Mzg4OTIyMA==',width:600,height:400,autoplay:false});</script></div>
+<div class="item-content">天津妞盘点：女特工的禁忌诱惑</div>
+</div>
+<div class="item-toolbar">
+<ul>
+<li class="fleft"><a rel="nofollow" href="javascript:void(0);" class="upscore site-bg" data-id="132897" data-score="1" data-url="http://www.waduanzi.com/post/score">1010</a></li>
+<li class="fleft"><a rel="nofollow" href="javascript:void(0);" class="downscore site-bg" data-id="132897" data-score="-1" data-url="http://www.waduanzi.com/post/score">-8</a></li>
+<li class="fright"><a rel="nofollow" href="javascript:void(0);" class="share site-bg">分享</a></li>
+<li class="fright"><a href="http://www.waduanzi.com/archives/132897#comments" data-url="http://www.waduanzi.com/comment/list1/id/132897" class="comment site-bg">吐槽</a></li>
+<li class="fright"><a rel="nofollow" href="javascript:void(0);" class="favorite site-bg" data-id="132897" data-url="http://www.waduanzi.com/post/like/id/132897">收藏</a></li>
+<div class="clear"></div>
+</ul>
+<div class="sharebox">
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" data="">
+<a class="bds_renren">人人网</a>
+<a class="bds_sqq">QQ好友</a>
+<a class="bds_huaban">花瓣网</a>
+<a class="bds_tqq">腾讯微博</a>
+<a class="bds_qzone">QQ空间</a>
+<a class="bds_tsina">新浪微博</a>
+<div class="arrow site-bg"></div>
+</div>
+</div>
+</div>
+<div class="comment-list comment-list-132897 hide"></div>
+</div>
+<div class="site-bg item-shadow"></div>
+<div class="panel panel20 post-item post-box">
+<div class="post-author">
+<img target="_blank" src="http://img01.waduanzi.com/avatars/2013/06/18/original_20130618123134_51bfe2a6688e1.jpeg!savatar" alt="画画吃" /> <a target="_blank" href="http://www.waduanzi.com/u/69">画画吃</a> </div>
+<div class="item-detail">
+<h2 class="item-title"><a class="cd-title-link" target="_blank" title="据说是电子烟突然烧了起来。。。位置不太好啊！" href="http://www.waduanzi.com/archives/132859">据说是电子烟突然烧了起来。。。位置不太好啊！</a></h2>
+<div class="post-video"><div id="youkuplayer-XMTQ4Mzg3ODMzNg=="></div><script type="text/javascript">var player =new YKU.Player('youkuplayer-XMTQ4Mzg3ODMzNg==',{client_id:'1f2d57f9b5ea2ce9',vid:'XMTQ4Mzg3ODMzNg==',width:600,height:400,autoplay:false});</script></div>
+<div class="item-content">据说是电子烟突然烧了起来。。。位置不太好啊！</div>
+</div>
+<div class="item-toolbar">
+<ul>
+<li class="fleft"><a rel="nofollow" href="javascript:void(0);" class="upscore site-bg" data-id="132859" data-score="1" data-url="http://www.waduanzi.com/post/score">1377</a></li>
+<li class="fleft"><a rel="nofollow" href="javascript:void(0);" class="downscore site-bg" data-id="132859" data-score="-1" data-url="http://www.waduanzi.com/post/score">-11</a></li>
+<li class="fright"><a rel="nofollow" href="javascript:void(0);" class="share site-bg">分享</a></li>
+<li class="fright"><a href="http://www.waduanzi.com/archives/132859#comments" data-url="http://www.waduanzi.com/comment/list1/id/132859" class="comment site-bg">吐槽</a></li>
+<li class="fright"><a rel="nofollow" href="javascript:void(0);" class="favorite site-bg" data-id="132859" data-url="http://www.waduanzi.com/post/like/id/132859">收藏</a></li>
+<div class="clear"></div>
+</ul>
+<div class="sharebox">
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" data="">
+<a class="bds_renren">人人网</a>
+<a class="bds_sqq">QQ好友</a>
+<a class="bds_huaban">花瓣网</a>
+<a class="bds_tqq">腾讯微博</a>
+<a class="bds_qzone">QQ空间</a>
+<a class="bds_tsina">新浪微博</a>
+<div class="arrow site-bg"></div>
+</div>
+</div>
+</div>
+<div class="comment-list comment-list-132859 hide"></div>
+</div>
+<div class="site-bg item-shadow"></div>
+<div class="panel panel20 post-item post-box">
+<div class="post-author">
+<img target="_blank" src="http://img01.waduanzi.com/avatars/2013/06/18/original_20130618123242_51bfe2eaa4de5.jpeg!savatar" alt="笑料百科" /> <a target="_blank" href="http://www.waduanzi.com/u/66">笑料百科</a> </div>
+<div class="item-detail">
+<h2 class="item-title"><a class="cd-title-link" target="_blank" title="这样的恶作剧就不怕被人打死吗？" href="http://www.waduanzi.com/archives/132860">这样的恶作剧就不怕被人打死吗？</a></h2>
+<div class="post-video"><div id="youkuplayer-XMTQ4Mzg2OTYzMg=="></div><script type="text/javascript">var player =new YKU.Player('youkuplayer-XMTQ4Mzg2OTYzMg==',{client_id:'1f2d57f9b5ea2ce9',vid:'XMTQ4Mzg2OTYzMg==',width:600,height:400,autoplay:false});</script></div>
+<div class="item-content">这样的恶作剧就不怕被人打死吗？</div>
+</div>
+<div class="item-toolbar">
+<ul>
+<li class="fleft"><a rel="nofollow" href="javascript:void(0);" class="upscore site-bg" data-id="132860" data-score="1" data-url="http://www.waduanzi.com/post/score">1312</a></li>
+<li class="fleft"><a rel="nofollow" href="javascript:void(0);" class="downscore site-bg" data-id="132860" data-score="-1" data-url="http://www.waduanzi.com/post/score">-10</a></li>
+<li class="fright"><a rel="nofollow" href="javascript:void(0);" class="share site-bg">分享</a></li>
+<li class="fright"><a href="http://www.waduanzi.com/archives/132860#comments" data-url="http://www.waduanzi.com/comment/list1/id/132860" class="comment site-bg">吐槽</a></li>
+<li class="fright"><a rel="nofollow" href="javascript:void(0);" class="favorite site-bg" data-id="132860" data-url="http://www.waduanzi.com/post/like/id/132860">收藏</a></li>
+<div class="clear"></div>
+</ul>
+<div class="sharebox">
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" data="">
+<a class="bds_renren">人人网</a>
+<a class="bds_sqq">QQ好友</a>
+<a class="bds_huaban">花瓣网</a>
+<a class="bds_tqq">腾讯微博</a>
+<a class="bds_qzone">QQ空间</a>
+<a class="bds_tsina">新浪微博</a>
+<div class="arrow site-bg"></div>
+</div>
+</div>
+</div>
+<div class="comment-list comment-list-132860 hide"></div>
+</div>
+<div class="site-bg item-shadow"></div>
+<div class="panel panel20 post-item post-box">
+<div class="post-author">
+<img target="_blank" src="http://img01.waduanzi.com/avatars/2013/06/18/original_20130618123134_51bfe2a6688e1.jpeg!savatar" alt="画画吃" /> <a target="_blank" href="http://www.waduanzi.com/u/69">画画吃</a> </div>
+<div class="item-detail">
+<h2 class="item-title"><a class="cd-title-link" target="_blank" title="飞碟一分钟：一分钟揭秘吃胎盘是否大补" href="http://www.waduanzi.com/archives/132862">飞碟一分钟：一分钟揭秘吃胎盘是否大补</a></h2>
+<div class="post-video"><div id="youkuplayer-XMTQ3ODQ4NjQ2MA=="></div><script type="text/javascript">var player =new YKU.Player('youkuplayer-XMTQ3ODQ4NjQ2MA==',{client_id:'1f2d57f9b5ea2ce9',vid:'XMTQ3ODQ4NjQ2MA==',width:600,height:400,autoplay:false});</script></div>
+<div class="item-content">飞碟一分钟：一分钟揭秘吃胎盘是否大补</div>
+</div>
+<div class="item-toolbar">
+<ul>
+<li class="fleft"><a rel="nofollow" href="javascript:void(0);" class="upscore site-bg" data-id="132862" data-score="1" data-url="http://www.waduanzi.com/post/score">1055</a></li>
+<li class="fleft"><a rel="nofollow" href="javascript:void(0);" class="downscore site-bg" data-id="132862" data-score="-1" data-url="http://www.waduanzi.com/post/score">-9</a></li>
+<li class="fright"><a rel="nofollow" href="javascript:void(0);" class="share site-bg">分享</a></li>
+<li class="fright"><a href="http://www.waduanzi.com/archives/132862#comments" data-url="http://www.waduanzi.com/comment/list1/id/132862" class="comment site-bg">吐槽</a></li>
+<li class="fright"><a rel="nofollow" href="javascript:void(0);" class="favorite site-bg" data-id="132862" data-url="http://www.waduanzi.com/post/like/id/132862">收藏</a></li>
+<div class="clear"></div>
+</ul>
+<div class="sharebox">
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" data="">
+<a class="bds_renren">人人网</a>
+<a class="bds_sqq">QQ好友</a>
+<a class="bds_huaban">花瓣网</a>
+<a class="bds_tqq">腾讯微博</a>
+<a class="bds_qzone">QQ空间</a>
+<a class="bds_tsina">新浪微博</a>
+<div class="arrow site-bg"></div>
+</div>
+</div>
+</div>
+<div class="comment-list comment-list-132862 hide"></div>
+</div>
+<div class="site-bg item-shadow"></div>
+<div class="panel panel20 post-item post-box">
+<div class="post-author">
+<img target="_blank" src="http://img01.waduanzi.com/avatars/2013/06/18/original_20130618122838_51bfe1f66464c.jpeg!savatar" alt="萌漫画" /> <a target="_blank" href="http://www.waduanzi.com/u/73">萌漫画</a> </div>
+<div class="item-detail">
+<h2 class="item-title"><a class="cd-title-link" target="_blank" title="《当你已离不开你的手机》Vine搞笑短片精选" href="http://www.waduanzi.com/archives/132800">《当你已离不开你的手机》Vine搞笑短片精选</a></h2>
+<div class="post-video"><div id="youkuplayer-XMTQ4Mjg3ODM1Mg=="></div><script type="text/javascript">var player =new YKU.Player('youkuplayer-XMTQ4Mjg3ODM1Mg==',{client_id:'1f2d57f9b5ea2ce9',vid:'XMTQ4Mjg3ODM1Mg==',width:600,height:400,autoplay:false});</script></div>
+<div class="item-content">《当你已离不开你的手机》Vine搞笑短片精选</div>
+</div>
+<div class="item-toolbar">
+<ul>
+<li class="fleft"><a rel="nofollow" href="javascript:void(0);" class="upscore site-bg" data-id="132800" data-score="1" data-url="http://www.waduanzi.com/post/score">894</a></li>
+<li class="fleft"><a rel="nofollow" href="javascript:void(0);" class="downscore site-bg" data-id="132800" data-score="-1" data-url="http://www.waduanzi.com/post/score">-15</a></li>
+<li class="fright"><a rel="nofollow" href="javascript:void(0);" class="share site-bg">分享</a></li>
+<li class="fright"><a href="http://www.waduanzi.com/archives/132800#comments" data-url="http://www.waduanzi.com/comment/list1/id/132800" class="comment site-bg">吐槽</a></li>
+<li class="fright"><a rel="nofollow" href="javascript:void(0);" class="favorite site-bg" data-id="132800" data-url="http://www.waduanzi.com/post/like/id/132800">1</a></li>
+<div class="clear"></div>
+</ul>
+<div class="sharebox">
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" data="">
+<a class="bds_renren">人人网</a>
+<a class="bds_sqq">QQ好友</a>
+<a class="bds_huaban">花瓣网</a>
+<a class="bds_tqq">腾讯微博</a>
+<a class="bds_qzone">QQ空间</a>
+<a class="bds_tsina">新浪微博</a>
+<div class="arrow site-bg"></div>
+</div>
+</div>
+</div>
+<div class="comment-list comment-list-132800 hide"></div>
+</div>
+<div class="site-bg item-shadow"></div>
+<div class="panel panel20 post-item post-box">
+<div class="post-author">
+<img target="_blank" src="http://img01.waduanzi.com/avatars/2013/06/18/original_20130618122838_51bfe1f66464c.jpeg!savatar" alt="萌漫画" /> <a target="_blank" href="http://www.waduanzi.com/u/73">萌漫画</a> </div>
+<div class="item-detail">
+<h2 class="item-title"><a class="cd-title-link" target="_blank" title="暴走大事件：民间出高玩，各门派冷门武功绝学被网络曝光" href="http://www.waduanzi.com/archives/132801">暴走大事件：民间出高玩，各门派冷门武功绝学被网络曝光</a></h2>
+<div class="post-video"><div id="youkuplayer-XMTQ4MjI1ODUwOA=="></div><script type="text/javascript">var player =new YKU.Player('youkuplayer-XMTQ4MjI1ODUwOA==',{client_id:'1f2d57f9b5ea2ce9',vid:'XMTQ4MjI1ODUwOA==',width:600,height:400,autoplay:false});</script></div>
+<div class="item-content">暴走大事件：民间出高玩，各门派冷门武功绝学被网络曝光</div>
+</div>
+<div class="item-toolbar">
+<ul>
+<li class="fleft"><a rel="nofollow" href="javascript:void(0);" class="upscore site-bg" data-id="132801" data-score="1" data-url="http://www.waduanzi.com/post/score">1033</a></li>
+<li class="fleft"><a rel="nofollow" href="javascript:void(0);" class="downscore site-bg" data-id="132801" data-score="-1" data-url="http://www.waduanzi.com/post/score">-15</a></li>
+<li class="fright"><a rel="nofollow" href="javascript:void(0);" class="share site-bg">分享</a></li>
+<li class="fright"><a href="http://www.waduanzi.com/archives/132801#comments" data-url="http://www.waduanzi.com/comment/list1/id/132801" class="comment site-bg">吐槽</a></li>
+<li class="fright"><a rel="nofollow" href="javascript:void(0);" class="favorite site-bg" data-id="132801" data-url="http://www.waduanzi.com/post/like/id/132801">收藏</a></li>
+<div class="clear"></div>
+</ul>
+<div class="sharebox">
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" data="">
+<a class="bds_renren">人人网</a>
+<a class="bds_sqq">QQ好友</a>
+<a class="bds_huaban">花瓣网</a>
+<a class="bds_tqq">腾讯微博</a>
+<a class="bds_qzone">QQ空间</a>
+<a class="bds_tsina">新浪微博</a>
+<div class="arrow site-bg"></div>
+</div>
+</div>
+</div>
+<div class="comment-list comment-list-132801 hide"></div>
+</div>
+<div class="site-bg item-shadow"></div>
+</div>
+<div class="panel panel-pages"><div class="cd-pages"><ul id="yw1" class="yiiPager"><li class="first"><a href="/video">首页</a></li>
+<li class="previous"><a href="/video/page/3">上页</a></li>
+<li class="page"><a href="/video">1</a></li>
+<li class="page"><a href="/video/page/2">2</a></li>
+<li class="page"><a href="/video/page/3">3</a></li>
+<li class="page selected"><a href="/video/page/4">4</a></li>
+<li class="page"><a href="/video/page/5">5</a></li>
+<li class="page"><a href="/video/page/6">6</a></li>
+<li class="next"><a href="/video/page/5">下页</a></li>
+<li class="last"><a href="/video/page/592">末页</a></li></ul></div></div>
+<script type="text/javascript">$(function(){$('.post-image').on('click','.thumbnail-more, .size-switcher',Waduanzi.switchImageSize);$('.item-toolbar').on('click','a.upscore, a.downscore',Waduanzi.ratingPost);$('.item-toolbar').on('mouseenter','a.share, .sharebox',Waduanzi.showShareBox);$('.item-toolbar').on('mouseleave','a.share, .sharebox',Waduanzi.hideShareBox);$('.item-toolbar').on('click','a.favorite',Waduanzi.favoritePost);$('.item-toolbar').on('click','a.comment',Waduanzi.fetchComments);$(document).on('click','.comment-arrows a',Waduanzi.RatingComment);$(document).on('click','input.submit-comment',Waduanzi.PostComment);$(document).on('focusin','textarea.comment-content',function(event){var tthis =$(this);if ($.trim(tthis.val()) ==tthis.attr('data-placeholder'))
+tthis.val('');});$(document).on('focusout','textarea.comment-content',function(event){var tthis =$(this);if ($.trim(tthis.val()).length ==0) {tthis.val(tthis.attr('data-placeholder'));}
+});});</script>
+</div>
+<div class="fright cd-sidebar">
+<div class="cdc-block acenter">
+<iframe frameborder="0" id="customMoudle" name="customMoudle" width="276" height="260" src="http://s1.56img.com/style/i/admin/v4/tpl/gq_share/v1/share_layer_list.html?style=rank_tags&title=&width=276&height=260&border=false&usrId=r239612568"></iframe>
+</div>
+<div class="panel panel15 bottom15px"><div class="content-block hot-tags"><h2 class="content-title">热门标签</h2><a target="_blank" class="tag-level1" href="http://www.waduanzi.com/tag/%E7%88%86%E7%AC%91%E5%86%85%E6%B6%B5">爆笑内涵</a><a target="_blank" class="tag-level3" href="http://www.waduanzi.com/tag/%E9%82%AA%E6%81%B6%E6%BC%AB%E7%94%BB">邪恶漫画</a><a target="_blank" class="tag-level2" href="http://www.waduanzi.com/tag/%E5%A6%96%E5%A6%96%E5%B0%8F%E7%B2%BE">妖妖小精</a><a target="_blank" class="tag-level1" href="http://www.waduanzi.com/tag/%E7%94%BB%E7%94%BB%E5%90%83">画画吃</a><a target="_blank" class="tag-level2" href="http://www.waduanzi.com/tag/%E9%83%AD%E6%96%AF%E7%89%B9">郭斯特</a><a target="_blank" class="tag-level1" href="http://www.waduanzi.com/tag/%E5%AE%89%E7%B3%8D%E5%96%B5Annchi">安糍喵Annchi</a><a target="_blank" class="tag-level1" href="http://www.waduanzi.com/tag/%E5%B0%8F%E7%9F%9B">小矛</a><a target="_blank" class="tag-level1" href="http://www.waduanzi.com/tag/%E6%AF%8F%E6%97%A5%E5%8A%A8%E6%BC%AB">每日动漫</a><a target="_blank" class="tag-level3" href="http://www.waduanzi.com/tag/%E5%AF%B8%E5%9C%9F%E5%90%A7">寸土吧</a><a target="_blank" class="tag-level2" href="http://www.waduanzi.com/tag/%E8%89%B2%E7%B3%BB%E6%BC%AB%E7%94%BB">色系漫画</a><a target="_blank" class="tag-level1" href="http://www.waduanzi.com/tag/%E5%86%85%E6%B6%B5%E5%9B%BE">内涵图</a><a target="_blank" class="tag-level1" href="http://www.waduanzi.com/tag/%E7%BB%8F%E5%85%B8%E8%8D%A4%E6%AE%B5%E5%AD%90">经典荤段子</a><a target="_blank" class="tag-level1" href="http://www.waduanzi.com/tag/cf%E8%8D%A4%E6%AE%B5%E5%AD%90">cf荤段子</a><a target="_blank" class="tag-level1" href="http://www.waduanzi.com/tag/%E5%A4%A7%E8%B1%A1ROV">大象ROV</a><a target="_blank" class="tag-level2" href="http://www.waduanzi.com/tag/%E8%89%B2%E7%B3%BB%E5%86%9B%E5%9B%A2">色系军团</a><a target="_blank" class="tag-level3" href="http://www.waduanzi.com/tag/%E5%86%85%E6%B6%B5%E6%BC%AB%E7%94%BB">内涵漫画</a><a target="_blank" class="tag-level2" href="http://www.waduanzi.com/tag/%E7%BD%97%E7%BD%97%E5%B8%83">罗罗布</a><a target="_blank" class="tag-level1" href="http://www.waduanzi.com/tag/%E5%8D%A1%E5%88%97%E6%BC%AB%E7%94%BB">卡列漫画</a><a target="_blank" class="tag-level1" href="http://www.waduanzi.com/tag/%E5%BD%BC%E6%A0%BC%E6%A2%A8">彼格梨</a><a target="_blank" class="tag-level2" href="http://www.waduanzi.com/tag/%E8%90%8C%E6%BC%AB%E7%94%BB">萌漫画</a><a target="_blank" class="tag-level1" href="http://www.waduanzi.com/tag/%E8%8D%A4%E6%AE%B5%E5%AD%90">荤段子</a><a target="_blank" class="tag-level1" href="http://www.waduanzi.com/tag/%E9%9C%8D%E9%9C%8D%E4%B8%BB%E4%B9%89%E5%A4%A7%E7%BB%B5%E7%BE%8A">霍霍主义大绵羊</a><a target="_blank" class="tag-level1" href="http://www.waduanzi.com/tag/%E8%8D%A4%E6%AE%B5%E5%AD%90%E7%AC%91%E8%AF%9D">荤段子笑话</a><a target="_blank" class="tag-level1" href="http://www.waduanzi.com/tag/%E9%BB%84%E6%AE%B5%E5%AD%90">黄段子</a><a target="_blank" class="tag-level2" href="http://www.waduanzi.com/tag/%E6%9A%B4%E8%B5%B0%E6%BC%AB%E7%94%BB">暴走漫画</a><a target="_blank" class="tag-level1" href="http://www.waduanzi.com/tag/echo%E5%B0%8F%E8%8C%B5%E8%8C%B5">echo小茵茵</a><a target="_blank" class="tag-level1" href="http://www.waduanzi.com/tag/%E9%82%AA%E6%81%B6%E6%BC%AB%E7%94%BB%E5%A4%A7%E6%B9%BF">邪恶漫画大湿</a><a target="_blank" class="tag-level1" href="http://www.waduanzi.com/tag/18%E7%A6%81%E6%BC%AB%E7%94%BB">18禁漫画</a></div></div>
+<div class="fixed-ad-block">
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="cd-wrapper">
+</div>
+<div class="cd-footer">
+<div class="cd-wrapper">
+<p class="fleft">&copy;2011-2013 <a href="http://www.waduanzi.com/">waduanzi.com</a>&nbsp;&nbsp;苏ICP备12075579号-3&nbsp;&nbsp;
+<a href="http://www.waduanzi.com/bdmap" target="_blank">网站地图</a>&nbsp;&nbsp;
+<a href="http://www.waduanzi.com/links" target="_blank">友情链接</a>&nbsp;&nbsp;
+<a href="http://www.waduanzi.com/tags" target="_blank">全部标签</a>&nbsp;&nbsp;
+<a href="http://www.waduanzi.com/about" target="_blank">关于我们</a>&nbsp;&nbsp;
+<a href="http://www.waduanzi.com/about/contact" target="_blank">联系我们</a>&nbsp;&nbsp;
+<a href="http://www.waduanzi.com/about/policy" target="_blank">免责声明</a>
+</p>
+<p class="fright">
+<a href="https://www.upyun.com/" target="_blank">
+<img src="http://upfiles.b0.upaiyun.com/logo/90x45.png" alt="UPYUN" />
+</a>
+</p>
+<div class="clear"></div>
+</div>
+</div>
+<img id="fixed-qrcode" src="http://static.waduanzi.com/images/qrcode_wx_200.png" />
+<div id="quick-login-modal" class="modal fade hide" role="dialog" aria-hidden="true">
+<div class="modal-body"></div>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=7&amp;mini=1&amp;pos=left&amp;uid=541407"></script>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=541407"></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">var bds_config={"snsKey":{'tsina':'2981913360','tqq':'801080691','renren':'e70cc17881d84a37ba941e0a9537902c'}};document.getElementById("bdshell_js").src ="http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<script>var _hmt =_hmt ||[];(function() {var hm =document.createElement("script");hm.src ="//hm.baidu.com/hm.js?21390eea6ac5086283581976c11a7116";var s =document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s);})();</script><script type="text/javascript" src="http://static.waduanzi.com/scripts/cd-all.min.js?t=20140718001"></script>
+</body>
+</html>

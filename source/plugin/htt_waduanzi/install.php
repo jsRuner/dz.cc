@@ -11,8 +11,15 @@
  */
 
 
+if(!defined('IN_DISCUZ')) {
+    exit('Access Denied');
+}
+
+//检查插件需要的模块
 if(function_exists('curl_init') && function_exists('curl_exec')) {
     $finish = True;
 }else{
-    cpmsg(lang('plugin/htt_qsbk', 'error_curl'), '', 'error');
+    cpmsg(lang('plugin/htt_waduanzi', 'error_curl'), '', 'error');
 }
+
+

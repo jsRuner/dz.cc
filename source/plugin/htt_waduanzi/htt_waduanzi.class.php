@@ -10,7 +10,7 @@
 if(!defined('IN_DISCUZ')) {
     exit('Access Denied');
 }
-class plugin_htt_163new {
+class plugin_htt_waduanzi {
     //TODO - Insert your code here
 
 

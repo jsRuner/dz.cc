@@ -171,15 +171,15 @@
 				
 				<item id="error_curl"><![CDATA[插件工作需要curl模块]]></item>
 				
+				<item id="info_cronname"><![CDATA[每日暴漫采集计划]]></item>
+				
 				
 				
 				
 				
 			</item>
 			
-			<item id="installlang">
-					<item id="info_cronname"><![CDATA[每日暴漫采集计划]]></item>
-			</item>
+			
 			
 		</item>
 

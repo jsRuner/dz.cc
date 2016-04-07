@@ -1,16 +1,16 @@
 <?php
 /**
- *    [qsbkwwf(qsbkwwf.cron_qsbkwwf)] (C)2016-2099 Powered by 吴文付.
+ *     (C)2016-2099 Powered by 吴文付.
  *    Version: 1.0
  *    Date: 2016-4-2 16:24
  *    Warning: Don't delete this comment
  *
  *
- *    cronname:htt_163new
- *    week:
- *    day:1
- *    hour:10
- *    minute:
+ *    cronname:info_cronname
+ *    week:-1
+ *    day:-1
+ *    hour:5
+ *    minute:30
  */
 
 
@@ -83,8 +83,8 @@ $uidstr = $var['htt_waduanzi']['uids'];
 $groupstr = $var['htt_waduanzi']['groups']; //用户组
 $threads = $var['htt_waduanzi']['threads'];
 $charset_num = $var['htt_waduanzi']['charset'];  // 1utf-8 2gbk
-$caiji_model = $var['htt_waduanzi']['caiji_model']; //1纯文 2表示纯图 3图文
-$imgpath = $var['htt_waduanzi']['imgpath']; //目录
+$caiji_model = $var['htt_waduanzi']['caiji_model']; //1视频模式
+//$imgpath = $var['htt_waduanzi']['imgpath']; //目录.
 $check = $var['htt_waduanzi']['check'];  //1不审核 2审核。
 $title_length = $var['htt_waduanzi']['title_length']; //标题长度
 
@@ -95,7 +95,7 @@ if($threads == 0){
 $fids =array_filter(unserialize($fidstr));
 if ( is_null($fids) || empty($fids)) {
     //则显示错误信息。
-    cpmsg(lang('plugin/htt_waduanzi', 'error_setting_fid'), '', 'error');
+    return;
 }
 
 $uids = array_filter(explode(',',$uidstr));
@@ -113,82 +113,52 @@ if( empty($uidstr)){
 
 
 if(empty($uids)){
-    cpmsg(lang('plugin/htt_waduanzi', 'error_setting_uid'), '', 'error');
+    return;
 }
 
-//检查目录存在或者可写。非纯文模式且设置了路径才检查。
-if($caiji_model != 1 && !empty($imgpath) && !new_is_writeable($imgpath)){
-    //尝试自动创建目录。如果失败，给出提示。
-    $res=mkdir(iconv("UTF-8", "GBK", $imgpath),0777,true);
-    if (!$res){
-        cpmsg(lang('plugin/htt_waduanzi', 'error_setting_imgpath'), '', 'error');
-    }
-}
 
 
 
 //检查是否超出范围。
-if ($threads<0 || $threads>8) {
+if ($threads<0 || $threads>10) {
     //则显示错误信息。
-    cpmsg(lang('plugin/htt_waduanzi', 'error_setting_threads'), '', 'error');
+    return;
 }
 
 //数据源。
 $urls = array(
-    'hot' => "http://baozoumanhua.com/originality/hot",
-    'fresh' => "http://baozoumanhua.com/originality/fresh",
-    'day'=>"http://baozoumanhua.com/originality/day",
-    'week' => "http://baozoumanhua.com/originality/week",
-    'year' => "http://baozoumanhua.com/originality/year",
+    'hot' => "http://www.waduanzi.com/video",
 );
 
 //分页。默认为第一页。最大11
 $page = 1;
-//
-//switch($caiji_model){
-//    case 1:
-//        $urls = array(
-//            'text_hot' => "http://www.qiushibaike.com/text/",
-//            'text_new' => "http://www.qiushibaike.com/textnew/",
-//        );
-//        break;
-//    case 2:
-//        $urls = array(
-//            'pic_hot'=>"http://www.qiushibaike.com/imgrank/",
-//            'pic_new'=>"http://www.qiushibaike.com/pic/",
-//        );
-//        break;
-//    default:
-//        $urls = array(
-//            '24h' => "http://www.qiushibaike.com/hot/",
-//            '8h' => "http://www.qiushibaike.com/",
-//        );
-//        break;
-//}
+
 
 #从数组中随机取一个
 $rand_keys = array_rand($urls, 1);
 $url = $urls[$rand_keys];
 
-$url = $url.'?page='.rand(1,11); //添加分页.每次8个。
-
-//echo $url;
-//exit();
-
-//$url = 'http://baozoumanhua.com/originality/fresh';
-
+$url = $url.'?page='.rand(1,11); //添加分页
 //检查函数是否可用。
 if(function_exists('curl_init') && function_exists('curl_exec')) {
 
     $html = curl_qsbk($url);
 }else{
-    cpmsg(lang('plugin/htt_waduanzi', 'error_curl'), '', 'error');
+    return;
 }
+
+//测试阶段，读取Html文件。
+//file_put_contents('1.txt',$html);
+//exit();
+//$html = file_get_contents('1.txt');
+
 //解析数据
 include_once DISCUZ_ROOT . './source/plugin/htt_waduanzi/include/phpQuery/phpQuery.php';
 phpquery::newDocumentHTML($html, 'utf-8');
+
+
 #获取段子列表。最外面那个。
-$articles = pq(".entry-item");
+$articles = pq(".post-item");
 $count = 1; //计数
 foreach ($articles as $article) {
 
@@ -199,29 +169,13 @@ foreach ($articles as $article) {
     $count = $count+1;
 
     $data = array();
-    $data['content'] = pq($article)->find(".title")->text();
+    $data['content'] = pq($article)->find(".item-title a")->text();
 
-
-
-
-    $data['img'] = pq($article)->find(".img-wrap a img")->attr('src');
-
-    //纯文则不会有图片。无须判断
-    //纯图则需要判断。路径问题。
-    //图片存在,则必须采集。路径存在则进入下载。否则引入外链
-    if(!empty($data['img'])){
-        if(!empty($imgpath)){
-            $local_img = time().uniqid().'.png';
-            $context = stream_context_create(array(
-                'http' => array(
-                    'timeout' => 30 //超时时间，单位为秒
-                )
-            ));
-            @file_put_contents(DISCUZ_ROOT.'./'.$imgpath.$local_img, file_get_contents($data['img'],0,$context));
-            $data['img'] =$imgpath.$local_img;
-        }
-
-        $attachment = 2; //附件,0无附件 1普通附件 2有图片附件
+    $data['video'] = pq($article)->find(".post-video div")->attr('id');
+    $data['video'] = "http://player.youku.com/player.php/Type/Folder/Fid/121/Ob/3/sid/".substr($data['video'],12)."/v.swf";
+    if(!empty($data['video'])){
+       
+        $attachment = 0; //附件,0无附件 1普通附件 2有图片附件
 
     }else{
         $attachment = 0; //附件,0无附件 1普通附件 2有图片附件
@@ -271,8 +225,8 @@ foreach ($articles as $article) {
     }
     $publishdate = time();
 
-    if(!empty($data['img'])){
-        $message = $data['content']."[img]".$data['img']."[/img]";
+    if(!empty($data['video'])){
+        $message = $data['content']."[media=swf,500,375]".$data['video']."[/media]";
 //        $bbcodeoff = '0'; //显示图片。
     }else{
         $message = $data['content'];
