@@ -22,25 +22,3 @@ if(function_exists('curl_init') && function_exists('curl_exec')) {
     cpmsg(lang('plugin/htt_qsbk', 'error_curl'), '', 'error');
 }
 
-//安装计划脚本。默认每天的5点30执行采集。
-if(file_exists(DISCUZ_ROOT . './source/plugin/htt_qsbk/cron/cron_htt_qsbk.php')) {
-    $data = array(
-        'available' => 1,
-        'type' => 'plugin',
-        'name' => $installlang['info_cronname'],
-        'filename' => 'htt_qsbk:cron_htt_qsbk.php',
-        'weekday' => -1,
-        'day' => -1,
-        'hour' => 5,
-        'minute' => 30,
-    );
-
-    //如果存在。则更新，否则插入
-    $cronid = C::t('common_cron')->get_cronid_by_filename('htt_qsbk:cron_htt_qsbk.php');
-    if($cronid){
-        C::t('common_cron')->update($cronid,$data);
-    }else{
-        C::t('common_cron')->insert($data, true, false, false);
-    }
-
-}

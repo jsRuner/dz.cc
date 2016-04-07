@@ -6,11 +6,11 @@
  *    Warning: Don't delete this comment
  *
  *
- *    cronname:htt_qsbk
- *    week:
- *    day:1
- *    hour:10
- *    minute:
+ *    cronname: info_cronname
+ *    week: -1
+ *    day:-1
+ *    hour:5
+ *    minute:30
  */
 
 
@@ -20,6 +20,7 @@
 if (!defined('IN_DISCUZ')) {
     exit('Access Denied');
 }
+
 
 
 
@@ -95,7 +96,7 @@ if($threads == 0){
 $fids =array_filter(unserialize($fidstr));
 if ( is_null($fids) || empty($fids)) {
     //则显示错误信息。
-    cpmsg(lang('plugin/htt_qsbk', 'error_setting_fid'), '', 'error');
+//    cpmsg(lang('plugin/htt_qsbk', 'error_setting_fid'), '', 'error');
 }
 
 $uids = array_filter(explode(',',$uidstr));
@@ -113,7 +114,8 @@ if( empty($uidstr)){
 
 
 if(empty($uids)){
-    cpmsg(lang('plugin/htt_qsbk', 'error_setting_uid'), '', 'error');
+    return;
+//    cpmsg(lang('plugin/htt_qsbk', 'error_setting_uid'), '', 'error');
 }
 
 //检查目录存在或者可写。非纯文模式且设置了路径才检查。
@@ -121,7 +123,8 @@ if($caiji_model != 1 && !empty($imgpath) && !new_is_writeable($imgpath)){
     //尝试自动创建目录。如果失败，给出提示。
     $res=mkdir(iconv("UTF-8", "GBK", $imgpath),0777,true);
     if (!$res){
-        cpmsg(lang('plugin/htt_qsbk', 'error_setting_imgpath'), '', 'error');
+        return;
+//        cpmsg(lang('plugin/htt_qsbk', 'error_setting_imgpath'), '', 'error');
     }
 }
 
@@ -130,7 +133,8 @@ if($caiji_model != 1 && !empty($imgpath) && !new_is_writeable($imgpath)){
 //检查是否超出范围。
 if ($threads<0 || $threads>20) {
     //则显示错误信息。
-    cpmsg(lang('plugin/htt_qsbk', 'error_setting_threads'), '', 'error');
+    return ;
+//    cpmsg(lang('plugin/htt_qsbk', 'error_setting_threads'), '', 'error');
 }
 
 //数据源。
@@ -173,7 +177,8 @@ if(function_exists('curl_init') && function_exists('curl_exec')) {
 
     $html = curl_qsbk($url);
 }else{
-    cpmsg(lang('plugin/htt_qsbk', 'error_curl'), '', 'error');
+
+//    cpmsg(lang('plugin/htt_qsbk', 'error_curl'), '', 'error');
 }
 //解析数据
 include_once DISCUZ_ROOT . './source/plugin/htt_qsbk/include/phpQuery/phpQuery.php';
