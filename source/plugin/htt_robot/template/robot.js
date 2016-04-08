@@ -34,8 +34,8 @@ jq(window).load(function(){
         robot_close.show();
     })
 
-    //点击发送按钮事件。添加ul中。并等待结果。ajaj请求等待结果。
-    send_btn.bind('click',function(){
+    //执行聊天逻辑。
+    function sendmsg (){
         var msg = send_input.val();
         console.log(msg);
         //构造一个li。插入到列表中。
@@ -76,7 +76,26 @@ jq(window).load(function(){
 
 
 
-    });
+    }
+
+
+
+    //点击发送按钮事件。添加ul中。并等待结果。ajaj请求等待结果。
+    send_btn.bind('click',sendmsg);
+
+    document.onkeydown=function(event){
+        var e = event || window.event || arguments.callee.caller.arguments[0];
+        if(e && e.keyCode==27){ // 按 Esc
+            //要做的事情
+        }
+        if(e && e.keyCode==113){ // 按 F2
+            //要做的事情
+        }
+        if(e && e.keyCode==13){ // enter 键
+            //要做的事情
+            sendmsg();
+        }
+    };
 
 
 
