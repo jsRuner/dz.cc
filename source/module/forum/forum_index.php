@@ -157,6 +157,9 @@ if($_G['setting']['grid']['showgrid']) {
 			}
 			$grids['image'] = C::t('forum_thread')->fetch_all_by_tid($tids);
 		}
+
+//        var_dump($grids['image']);
+//        exit();
 		$grids['newthread'] = C::t('forum_thread')->fetch_all_for_guide('newthread', 0, array(), 0, 0, 0, 10, $_G['setting']['grid']['fids']);
 
 		$grids['newreply'] = C::t('forum_thread')->fetch_all_for_guide('reply', 0, array(), 0, 0, 0, 10, $_G['setting']['grid']['fids']);
@@ -198,6 +201,8 @@ if($_G['setting']['grid']['showgrid']) {
 				}
 				if($images[$ithread['tid']]['remote']) {
 					$imageurl = $_G['setting']['ftp']['attachurl'].'forum/'.$images[$ithread['tid']]['attachment'];
+//					$imageurl = $images[$ithread['tid']]['attachment'];
+
 				} else {
 					$imageurl = $_G['setting']['attachurl'].'forum/'.$images[$ithread['tid']]['attachment'];
 				}
@@ -208,6 +213,10 @@ if($_G['setting']['grid']['showgrid']) {
 					);
 			}
 		}
+
+//        var_dump($grids['slide']);
+//        exit();
+
 		$grids['cachetime'] = TIMESTAMP;
 		savecache('grids', $grids);
 	}

@@ -1,0 +1,98 @@
+
+#robot_container_closed{
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 30px;
+    bottom: 200px;
+    background: url("image/robot.jpg") no-repeat;
+}
+
+
+#robot_container_open{
+    background: white;
+    width: 300px;
+    height: 400px;
+    /*display: none;*/
+    position: fixed;
+    right: 30px;
+    bottom: 200px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#robot_container_open .title{
+    width: 100%;
+    text-align: center;
+
+}
+#robot_container_open .title span{
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+#robot_container_open .fengexian{
+    width: 100%;
+    border: #EFEFEF solid 1px;
+}
+
+#robot_container_open .wechat{
+    width: 100%;
+    height: 70%;
+    overflow:auto;
+
+}
+
+#robot_container_open .wechat .robot{
+    /*float: left;*/
+    text-align: left;
+}
+
+/*姓名加粗。标红*/
+#robot_container_open .wechat li span{
+    /*float: left;*/
+   font-size: 16px;
+    font-weight: bold;
+    color: red;
+}
+
+
+
+
+
+
+#robot_container_open .wechat .me{
+    /*float: left;*/
+    text-align: right;
+}
+
+
+
+/*聊天的底部窗口*/
+#robot_container_open .do_area{
+    /*height: 50px;*/
+    width: 280px;
+    /*background-color: #00BBCC;*/
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+}
+
+#robot_container_open .do_area input{
+    /*width: 70%;*/
+    line-height: 30px;
+    width: 200px;
+
+}
+
+
+#robot_container_open .do_area button{
+    line-height: 30px;
+    width:60px;
+    /*width: 20%;*/
+}
+
+

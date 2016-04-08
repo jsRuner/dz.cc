@@ -22,6 +22,62 @@ if (!defined('IN_DISCUZ')) {
 }
 
 
+echo 22;
+function strFilter($str){
+    $str = str_replace('`', '', $str);
+    $str = str_replace('·', '', $str);
+    $str = str_replace('~', '', $str);
+    $str = str_replace('!', '', $str);
+    $str = str_replace('！', '', $str);
+    $str = str_replace('@', '', $str);
+    $str = str_replace('#', '', $str);
+    $str = str_replace('$', '', $str);
+    $str = str_replace('￥', '', $str);
+    $str = str_replace('%', '', $str);
+    $str = str_replace('^', '', $str);
+    $str = str_replace('……', '', $str);
+    $str = str_replace('&', '', $str);
+    $str = str_replace('*', '', $str);
+    $str = str_replace('(', '', $str);
+    $str = str_replace(')', '', $str);
+    $str = str_replace('（', '', $str);
+    $str = str_replace('）', '', $str);
+    $str = str_replace('-', '', $str);
+    $str = str_replace('_', '', $str);
+    $str = str_replace('——', '', $str);
+    $str = str_replace('+', '', $str);
+    $str = str_replace('=', '', $str);
+    $str = str_replace('|', '', $str);
+    $str = str_replace('\\', '', $str);
+    $str = str_replace('[', '', $str);
+    $str = str_replace(']', '', $str);
+    $str = str_replace('【', '', $str);
+    $str = str_replace('】', '', $str);
+    $str = str_replace('{', '', $str);
+    $str = str_replace('}', '', $str);
+    $str = str_replace(';', '', $str);
+    $str = str_replace('；', '', $str);
+    $str = str_replace(':', '', $str);
+    $str = str_replace('：', '', $str);
+    $str = str_replace('\'', '', $str);
+    $str = str_replace('"', '', $str);
+    $str = str_replace('“', '', $str);
+    $str = str_replace('”', '', $str);
+    $str = str_replace(',', '', $str);
+    $str = str_replace('，', '', $str);
+    $str = str_replace('<', '', $str);
+    $str = str_replace('>', '', $str);
+    $str = str_replace('《', '', $str);
+    $str = str_replace('》', '', $str);
+    $str = str_replace('.', '', $str);
+    $str = str_replace('。', '', $str);
+    $str = str_replace('/', '', $str);
+    $str = str_replace('、', '', $str);
+    $str = str_replace('?', '', $str);
+    $str = str_replace('？', '', $str);
+    return trim($str);
+}
+
 
 
 /**
@@ -70,7 +126,7 @@ function curl_qsbk($url)
     curl_close($curl);
 
     if (empty($html)) {
-        return curl_qsbk();
+        return curl_qsbk($url);
     }
     return $html;
 }
@@ -96,7 +152,7 @@ if($threads == 0){
 $fids =array_filter(unserialize($fidstr));
 if ( is_null($fids) || empty($fids)) {
     //则显示错误信息。
-//    cpmsg(lang('plugin/htt_qsbk', 'error_setting_fid'), '', 'error');
+    cpmsg(lang('plugin/htt_qsbk', 'error_setting_fid'), '', 'error');
 }
 
 $uids = array_filter(explode(',',$uidstr));
@@ -114,27 +170,28 @@ if( empty($uidstr)){
 
 
 if(empty($uids)){
-    return;
-//    cpmsg(lang('plugin/htt_qsbk', 'error_setting_uid'), '', 'error');
+//    return;
+    cpmsg(lang('plugin/htt_qsbk', 'error_setting_uid'), '', 'error');
 }
-
+/*
 //检查目录存在或者可写。非纯文模式且设置了路径才检查。
-if($caiji_model != 1 && !empty($imgpath) && !new_is_writeable($imgpath)){
+if($caiji_model != 1 && !empty($imgpath) && !new_is_writeable($_G['setting']['attachurl'].'forum/'.$imgpath)){
     //尝试自动创建目录。如果失败，给出提示。
-    $res=mkdir(iconv("UTF-8", "GBK", $imgpath),0777,true);
+    //路径应当是 htt_qsbk/
+    $res=mkdir(iconv("UTF-8", "GBK", $_G['setting']['attachurl'].'forum/'.$imgpath),0777,true);
     if (!$res){
         return;
 //        cpmsg(lang('plugin/htt_qsbk', 'error_setting_imgpath'), '', 'error');
     }
-}
+}*/
 
 
 
 //检查是否超出范围。
 if ($threads<0 || $threads>20) {
     //则显示错误信息。
-    return ;
-//    cpmsg(lang('plugin/htt_qsbk', 'error_setting_threads'), '', 'error');
+//    return ;
+    cpmsg(lang('plugin/htt_qsbk', 'error_setting_threads'), '', 'error');
 }
 
 //数据源。
@@ -178,8 +235,13 @@ if(function_exists('curl_init') && function_exists('curl_exec')) {
     $html = curl_qsbk($url);
 }else{
 
-//    cpmsg(lang('plugin/htt_qsbk', 'error_curl'), '', 'error');
+    cpmsg(lang('plugin/htt_qsbk', 'error_curl'), '', 'error');
 }
+
+echo 111;
+echo $html;
+exit();
+
 //解析数据
 include_once DISCUZ_ROOT . './source/plugin/htt_qsbk/include/phpQuery/phpQuery.php';
 phpquery::newDocumentHTML($html, 'utf-8');
@@ -201,6 +263,10 @@ foreach ($articles as $article) {
     //纯文则不会有图片。无须判断
     //纯图则需要判断。路径问题。
     //图片存在,则必须采集。路径存在则进入下载。否则引入外链
+    $remote = 1; //默认远程附件
+
+    $imgpath = '201604/07/';
+
     if(!empty($data['img'])){
         if(!empty($imgpath)){
             $local_img = time().uniqid().'.png';
@@ -209,8 +275,11 @@ foreach ($articles as $article) {
                     'timeout' => 30 //超时时间，单位为秒
                 )
             ));
-            @file_put_contents(DISCUZ_ROOT.'./'.$imgpath.$local_img, file_get_contents($data['img'],0,$context));
+            @file_put_contents(DISCUZ_ROOT.'./'.$_G['setting']['attachurl'].'forum/'.$imgpath.$local_img, file_get_contents($data['img'],0,$context));
             $data['img'] =$imgpath.$local_img;
+            #这里的路径要从 data/attament/forum/开始。
+
+            $remote = 0; //主题图片表中 1表示远程图片。0表示本地图片。
         }
 
         $attachment = 2; //附件,0无附件 1普通附件 2有图片附件
@@ -250,6 +319,8 @@ foreach ($articles as $article) {
     if ($charset_num != 1) {
         $data['content'] = iconv("UTF-8", "gbk", $data['content']);
     }
+
+
     //控制标题的长度。存在内容。同时内容长度超过最大长度。则截取。
     if(!empty($data['content'] && strlen($data['content']) > $title_length )){
 
@@ -257,10 +328,16 @@ foreach ($articles as $article) {
     }else {
         $subject = $data['content'];
     }
+
+    //标题去掉一次特殊字符串.否则引发首页四
+    $subject = strFilter($subject);
+
+
+
     $publishdate = time();
 
     if(!empty($data['img'])){
-        $message = $data['content']."[img]".$data['img']."[/img]";
+        $message = $data['content']."[img]".$_G['setting']['attachurl'].'forum/'.$data['img']."[/img]";
 //        $bbcodeoff = '0'; //显示图片。
     }else{
         $message = $data['content'];
@@ -293,6 +370,16 @@ foreach ($articles as $article) {
     );
     //插入主题
     $tid = C::t('forum_thread')->insert($newthread, true);
+
+    //假如到主题的图片表
+    //remote 0表示本地。
+
+
+    C::t('forum_threadimage')->insert(array(
+        'tid'=>$tid,
+        'attachment'=>$data['img'],
+        'remote'=>$remote,
+    ),true);
 
 
 

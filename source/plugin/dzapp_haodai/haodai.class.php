@@ -18,6 +18,7 @@ class plugin_dzapp_haodai {
 		return;
 	}
 }
+
 class plugin_dzapp_haodai_forum extends plugin_dzapp_haodai {
 	function forumdisplay_top_output() {
 		global $_G;
