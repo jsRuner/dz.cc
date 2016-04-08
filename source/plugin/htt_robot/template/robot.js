@@ -47,7 +47,7 @@ jq(window).load(function(){
         msg_list[0].scrollTop = msg_list[0].scrollTop+42*2;
 
         //禁用按钮。避免发言过快。
-        send_btn.attr('disabled','disabled')
+        //send_btn.attr('disabled','disabled')
 
         //ajax请求后台。
         jq.ajax({
@@ -93,7 +93,9 @@ jq(window).load(function(){
         }
         if(e && e.keyCode==13){ // enter 键
             //要做的事情
-            sendmsg();
+            if(!robot_open.is(":hidden")){
+                sendmsg();
+            }
         }
     };
 

@@ -16,23 +16,36 @@ class plugin_htt_robot{
 
 
     function global_footer(){
-        include_once template('htt_robot:robot');
-        return $robot_html;
+        global $_G;
+        //获取插件的参数。
+        loadcache('plugin');
+        $var = $_G['cache']['plugin'];
+        $groupstr = $var['htt_robot']['groups']; //用户组。哪些用户组可以看到机器人。
+        $robot_name = $var['htt_robot']['robot_name']; //机器人的名字
+        $welcome_msg = $var['htt_robot']['welcome_msg']; //欢迎语
+        $tuling_key= $var['htt_robot']['tuling_key']; //key
+        $check = $var['htt_robot']['is_show'];  //1隐藏 2启用。
+//        $_G['welcome_msg'] = $welcome_msg;
+
+        //判断当前访问的用户组和版块。游客的显示。
+        $gids  = array_filter(unserialize($groupstr));
+       // $_G['groupid']; //当前用户组id
+        //如果用户组符合要求。同时也设置了启用。则可以看到机器人。否则不可以。
+        //1显示机器人2 隐藏机器人
+        if($check == '1' && in_array($_G['groupid'],$gids)){
+            include_once template('htt_robot:robot');
+            return $robot_html;
+        }else{
+            return ;
+        }
+
+
+
+
+
 
     }
 }
-
-/*
-class plugin_htt_robot_forum extends plugin_htt_robot
-{
-    function forumdisplay_top_output()
-    {
-        global $_G;
-
-        include_once template('htt_robot:robot');
-        return $robot_html;
-    }
-}*/
 
 
 ?>
