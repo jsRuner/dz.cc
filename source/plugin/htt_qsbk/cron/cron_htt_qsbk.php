@@ -238,9 +238,9 @@ if(function_exists('curl_init') && function_exists('curl_exec')) {
     cpmsg(lang('plugin/htt_qsbk', 'error_curl'), '', 'error');
 }
 
-echo 111;
-echo $html;
-exit();
+//echo 111;
+//echo $html;
+//exit();
 
 //½âÎöÊý¾Ý
 include_once DISCUZ_ROOT . './source/plugin/htt_qsbk/include/phpQuery/phpQuery.php';

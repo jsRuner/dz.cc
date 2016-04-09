@@ -5,6 +5,8 @@
 //绑定点击事件。
 var jq = jQuery.noConflict(); //消除jquery的冲突。
 
+
+
 function keepBottom(){
 
 }
@@ -12,15 +14,25 @@ function keepBottom(){
 jq(window).load(function(){
 
     var robot_close =  jq('#robot_container_closed'); //聊天的容器
-    var close_btn =  jq('#close_btn'); //关闭按钮
+    //var close_btn =  jq('#close_btn'); //关闭按钮
+    var close_btn =  jq('#robot_container_open .title .headBtn'); //关闭按钮
+
     var robot_open =  jq('#robot_container_open');
 
-    var send_btn = jq('#send_button') //发送按钮
+    //var send_btn = jq('#send_button') //发送按钮
+    var send_btn = jq('#sendBtn') //发送按钮
 
-    var send_input = jq('.do_area input') //内容
+    //var send_input = jq('.do_area input') //内容
+    var send_input = jq('#inputMsg') //内容
 
     var msg_list = jq('.wechat') //聊天列表
 
+
+    var host = window.location.host; //域名
+
+    var robot_name = jq('#robot_container_open > div.title > span').text();
+
+    //console.log(host);
 
     //打开机器人。
    robot_close.bind('click',function(){
@@ -30,6 +42,8 @@ jq(window).load(function(){
 
     //关闭机器人。
     close_btn.bind('click',function(){
+
+        var xx = confirm("嘻嘻,这里只有关闭功能，要离开我吗?呜呜呜。。。")
         robot_open.hide();
         robot_close.show();
     })
@@ -37,14 +51,26 @@ jq(window).load(function(){
     //执行聊天逻辑。
     function sendmsg (){
         var msg = send_input.val();
+        if(msg ==''){
+            alert('内容不可以为空哟')
+            return;
+        }else{
+            send_input.val('');
+        }
+
+
         console.log(msg);
-        //构造一个li。插入到列表中。
-        var me = ' <li class="me"> <span>我</span> <div>'+msg+'</div></li>';
-        msg_list.append(me);
         //输出一下滚动条的位置。
         console.log(msg_list[0].scrollTop)
         console.log(msg_list[0].scrollHeight) //滚动条的高度。如果超出多少。则修改距离顶部
-        msg_list[0].scrollTop = msg_list[0].scrollTop+42*2;
+
+        var sh = msg_list[0].scrollHeight;
+
+        //构造一个li。插入到列表中。
+        var me = ' <li class="me"> <span>我</span> <div>'+msg+'</div></li>';
+        msg_list.append(me);
+
+
 
         //禁用按钮。避免发言过快。
         //send_btn.attr('disabled','disabled')
@@ -52,27 +78,35 @@ jq(window).load(function(){
         //ajax请求后台。
         jq.ajax({
             type: 'POST',
-            url: 'http://dzgbk.cc/plugin.php?id=htt_robot:robot',
+            url: 'http://'+host+'/plugin.php?id=htt_robot:robot',
             data: {msg:msg},
             success: function(data){
 
-                var robot = ' <li class="robot"> <span>小小付</span> <div>'+data.msg+'</div></li>';
+                var robot = ' <li class="robot"> <span>'+robot_name+'</span> <div>'+data.msg+'</div></li>';
                 msg_list.append(robot);
+                console.log(msg_list[0].scrollTop)
+                console.log(msg_list[0].scrollHeight) //滚动条的高度。如果超出多少。则修改距离顶部
+                var eh = msg_list[0].scrollHeight;
+                msg_list[0].scrollTop = msg_list[0].scrollTop+(eh-sh);
             },
             dataType: 'json',
             error:function(XMLHttpRequest, textStatus, errorThrown){
-                var robot = ' <li class="robot"> <span>小小付</span> <div>哎呀,脑袋坏掉了，请联系我的主人</div></li>';
+                var robot = ' <li class="robot"> <span>'+robot_name+'</span> <div>哎呀,脑袋坏掉了，请联系我的主人</div></li>';
                 msg_list.append(robot);
                 //msg_list[0].scrollTop = msg_list[0].scrollTop+330;
+
             },
             complete:function(XMLHttpRequest, textStatus){
                 //请求完成后。开启按钮。
                 send_btn.attr('disabled',false)
+
             }
 
 
 
         });
+
+
 
 
 

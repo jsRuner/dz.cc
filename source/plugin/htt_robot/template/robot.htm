@@ -12,8 +12,11 @@
 
 
     <div id="robot_container_open">
-        <div id="close_btn">X</div>
-        <div class="title"><span>正在和{$robot_name}聊天</span></div>
+        <div class="title">
+            <img src="source/plugin/htt_robot/template/image/robot.png" alt="">
+            <span>{$robot_name}</span>
+            <div class="headBtn"><a hidefocus="" href="javascript: void(0);" class="zhichiVoice" title="开/关 声音"></a> <a hidefocus="" href="javascript: void(0);" class="zhichiMin" title="最小化"></a> <a hidefocus="" href="javascript: void(0);" class="zhichiMax" title="最大化"></a> <a hidefocus="" href="javascript: void(0);" class="zhichiClose" title="结束对话"></a></div>
+        </div>
         <div class="fengexian"></div>
 
         <ul class="wechat">
@@ -30,10 +33,13 @@
 
         <div class="do_area">
 
-                <input type="text" name="msg" id="" value="快来说2句">
-                <button type="button" id="send_button">发送</button>
+                <!--<input type="text" name="msg" id="" value="快来说2句">-->
+
+            <textarea cols="50" rows="5" id="inputMsg" class="text grey">请输入...</textarea>
+                <!--<button type="button" id="send_button">发送</button>-->
 
         </div>
+        <div class="powBox"><p class="pow">Powered by <a hidefocus="" href="//www.wuwenfu.cn" target="_blank">北岸的云</a></p><button type="button" class="btn send-btn" id="sendBtn" style="color: rgb(255, 255, 255); background: rgb(19, 201, 203);">发送</button></div>
 
 
     </div>
