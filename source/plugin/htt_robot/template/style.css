@@ -1,12 +1,13 @@
 
 #robot_container_closed{
     /*display: none;*/
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     position: fixed;
     right: 30px;
-    bottom: 0px;
-    background: url("image/robot.jpg") no-repeat;
+    bottom: 30px;
+    background: url("image/robot.png") no-repeat;
+    z-index: 1111111;
 }
 
 
@@ -20,9 +21,10 @@
     display: none;
     position: fixed;
     right: 30px;
-    bottom: 0px;
+    bottom: 30px;
     /*padding: 10px;*/
     border: 1px solid black;
+    z-index: 1111111;
 }
 
 

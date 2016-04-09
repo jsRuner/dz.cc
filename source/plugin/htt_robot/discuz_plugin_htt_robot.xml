@@ -10,7 +10,7 @@
             <item id="adminid"><![CDATA[0]]></item>
             <item id="name"><![CDATA[聊天机器人]]></item>
             <item id="identifier"><![CDATA[htt_robot]]></item>
-            <item id="description"><![CDATA[陪论坛访问聊天的机器人]]></item>
+            <item id="description"><![CDATA[可爱的机器人]]></item>
             <item id="datatables"><![CDATA[]]></item>
             <item id="directory"><![CDATA[htt_robot/]]></item>
             <item id="copyright"><![CDATA[吴文付]]></item>
@@ -46,10 +46,10 @@
 			 <item id="1">
                 <item id="displayorder"><![CDATA[1]]></item>
                 <item id="title"><![CDATA[机器人名称]]></item>
-                <item id="description"><![CDATA[机器人的名字,默认为论坛守护者。]]></item>
+                <item id="description"><![CDATA[机器人的名字,默认为小小付。]]></item>
                 <item id="variable"><![CDATA[robot_name]]></item>
                 <item id="type"><![CDATA[text]]></item>
-                <item id="value"><![CDATA[论坛守护者]]></item>
+                <item id="value"><![CDATA[小小付]]></item>
                 <item id="extra"><![CDATA[]]></item>
             </item>
 			
@@ -58,7 +58,7 @@
 			<item id="2">
                 <item id="displayorder"><![CDATA[2]]></item>
                 <item id="title"><![CDATA[用户组]]></item>
-                <item id="description"><![CDATA[用户组设置,支持多选。只有该用户组可以看到机器人.]]></item>
+                <item id="description"><![CDATA[用户组设置,支持多选。只有该用户组访问论坛才可以看到机器人.仅针对已经登录系统的用户有效]]></item>
                 <item id="variable"><![CDATA[groups]]></item>
                 <item id="type"><![CDATA[groups]]></item>
                 <item id="value"><![CDATA[1]]></item>
@@ -70,10 +70,10 @@
          <item id="3">
                 <item id="displayorder"><![CDATA[3]]></item>
                 <item id="title"><![CDATA[欢迎语设置]]></item>
-                <item id="description"><![CDATA[机器人说的第一句话。]]></item>
+                <item id="description"><![CDATA[机器人说的第一句话]]></item>
                 <item id="variable"><![CDATA[welcome_msg]]></item>
                 <item id="type"><![CDATA[text]]></item>
-                <item id="value"><![CDATA[欢迎您的到来,我是论坛守护者]]></item>
+                <item id="value"><![CDATA[欢迎您的到来,我是小小付，可以陪你聊天哟。]]></item>
                 <item id="extra"><![CDATA[]]></item>
             </item>
 			
@@ -81,10 +81,10 @@
          <item id="4">
                 <item id="displayorder"><![CDATA[4]]></item>
                 <item id="title"><![CDATA[图灵key]]></item>
-                <item id="description"><![CDATA[*请去图灵官网申请,否则无法正常工作。http://www.tuling123.com/]]></item>
+                <item id="description"><![CDATA[*请去图灵官网申请,否则无法正常工作。默认是作者的。请及时修改。http://www.tuling123.com/]]></item>
                 <item id="variable"><![CDATA[tuling_key]]></item>
                 <item id="type"><![CDATA[text]]></item>
-                <item id="value"><![CDATA[]]></item>
+                <item id="value"><![CDATA[c2d6661fd001217c4fec38d0e4b98c31]]></item>
                 <item id="extra"><![CDATA[]]></item>
             </item>
 		
@@ -93,7 +93,7 @@
 <item id="7">
                 <item id="displayorder"><![CDATA[7]]></item>
                 <item id="title"><![CDATA[开关设置]]></item>
-                <item id="description"><![CDATA[默认关闭,开启后则机器人会出现]]></item>
+                <item id="description"><![CDATA[不需要时可以设置为隐藏。默认开启]]></item>
                 <item id="variable"><![CDATA[is_show]]></item>
                 <item id="type"><![CDATA[select]]></item>
                 <item id="value"><![CDATA[1]]></item>
@@ -102,6 +102,21 @@
 
 
             </item>
+			
+			
+<item id="8">
+                <item id="displayorder"><![CDATA[8]]></item>
+                <item id="title"><![CDATA[路人设置]]></item>
+                <item id="description"><![CDATA[针对没有注册账号或者未登录论坛的访客。默认开启.该设置当前版本无效。]]></item>
+                <item id="variable"><![CDATA[other_people]]></item>
+                <item id="type"><![CDATA[select]]></item>
+                <item id="value"><![CDATA[1]]></item>
+                <item id="extra"><![CDATA[1=路人可见
+2=路人不可见]]></item>
+
+
+            </item>
+			
 			
 		
 			
@@ -120,18 +135,13 @@
 				
 			
 				
-				
-			
-				
-				
 				<item id="error_curl"><![CDATA[插件工作需要curl模块]]></item>
-				
+					
+			</item>
 			
-				
-				
-				
-				
-				
+			<item id="installlang">
+			
+			<item id="error_curl"><![CDATA[插件工作需要curl模块]]></item>
 			</item>
 			
 			
@@ -141,6 +151,8 @@
 
         <item id="installfile"><![CDATA[install.php]]></item>
 		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		 <item id="checkfile"><![CDATA[check.php]]></item>
+		
 
 
     </item>
