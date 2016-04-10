@@ -32,6 +32,13 @@ jq(window).load(function(){
 
     var robot_name = jq('#robot_container_open > div.title > span').text();
 
+    //获取需要的文字。
+    var close_text = jq('#close_text').val();
+    var error_empty = jq('#error_empty').val();
+    var mename = jq('#me').val();
+    var robot_bug = jq('#robot_bug').val();
+    var please_input = jq('#please_input').val();
+
     //console.log(host);
 
     //打开机器人。
@@ -43,16 +50,27 @@ jq(window).load(function(){
     //关闭机器人。
     close_btn.bind('click',function(){
 
-        var xx = confirm("嘻嘻,这里只有关闭功能，要离开我吗?呜呜呜。。。")
+        var xx = confirm(close_text)
         robot_open.hide();
         robot_close.show();
     })
 
+    //点击输入框的时候。如果内容是初始化的内容。则清空一次。
+    send_input.bind('focus',function(){
+        if(send_input.val() == please_input ){
+            send_input.val('')
+        }
+    })
+
+
     //执行聊天逻辑。
     function sendmsg (){
         var msg = send_input.val();
+
+
+
         if(msg ==''){
-            alert('内容不可以为空哟')
+            alert(error_empty)
             return;
         }else{
             send_input.val('');
@@ -67,7 +85,7 @@ jq(window).load(function(){
         var sh = msg_list[0].scrollHeight;
 
         //构造一个li。插入到列表中。
-        var me = ' <li class="me"> <span>我</span> <div>'+msg+'</div></li>';
+        var me = ' <li class="me"> <span>'+mename+'</span> <div>'+msg+'</div></li>';
         msg_list.append(me);
 
 
@@ -91,7 +109,7 @@ jq(window).load(function(){
             },
             dataType: 'json',
             error:function(XMLHttpRequest, textStatus, errorThrown){
-                var robot = ' <li class="robot"> <span>'+robot_name+'</span> <div>哎呀,脑袋坏掉了，请联系我的主人</div></li>';
+                var robot = ' <li class="robot"> <span>'+robot_name+'</span> <div>'+robot_bug+'</div></li>';
                 msg_list.append(robot);
                 //msg_list[0].scrollTop = msg_list[0].scrollTop+330;
 

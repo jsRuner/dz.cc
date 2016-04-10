@@ -34,22 +34,13 @@ $check = $var['htt_robot']['is_show'];  //1隐藏 2启用
 
 $key = $tuling_key;
 
-$info = $_POST['msg'];
-//$info = 'helloworld';
+//$info = $_POST['msg'];
+//增加参数获取安全。
+$info = $_G['gp_msg'];
 
 $url = 'http://www.tuling123.com/openapi/api?key=' . $key . '&info=' . urlencode($info);
-//$url = 'http://www.tuling123.com/openapi/api';
-
-//echo $url;
-//exit();
 
 $replystr = curl_html($url);
-/*$replystr = curl_html($url);
-if(empty($replystr)){
-    $replystr = @file_get_contents($url);
-}*/
-//$replystr = dfsockopen($url,10000,$post=array('key'=>$key,'info'=>$info));
-
 
 $replyarr = json_decode($replystr, true);
 

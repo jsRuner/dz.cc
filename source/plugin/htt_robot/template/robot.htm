@@ -15,7 +15,7 @@
         <div class="title">
             <img src="source/plugin/htt_robot/template/image/robot.png" alt="">
             <span>{$robot_name}</span>
-            <div class="headBtn"><a hidefocus="" href="javascript: void(0);" class="zhichiVoice" title="开/关 声音"></a> <a hidefocus="" href="javascript: void(0);" class="zhichiMin" title="最小化"></a> <a hidefocus="" href="javascript: void(0);" class="zhichiMax" title="最大化"></a> <a hidefocus="" href="javascript: void(0);" class="zhichiClose" title="结束对话"></a></div>
+            <div class="headBtn"><a hidefocus="" href="javascript: void(0);" class="zhichiVoice" title="{lang htt_robot:zhichiVoice}"></a> <a hidefocus="" href="javascript: void(0);" class="zhichiMin" title="{lang htt_robot:zhichiMin}"></a> <a hidefocus="" href="javascript: void(0);" class="zhichiMax" title="{lang htt_robot:zhichiMax}"></a> <a hidefocus="" href="javascript: void(0);" class="zhichiClose" title="{lang htt_robot:zhichiClose}"></a></div>
         </div>
         <div class="fengexian"></div>
 
@@ -35,14 +35,21 @@
 
                 <!--<input type="text" name="msg" id="" value="快来说2句">-->
 
-            <textarea cols="50" rows="5" id="inputMsg" class="text grey">请输入...</textarea>
+            <textarea cols="50" rows="5" id="inputMsg" class="text grey">{lang htt_robot:please_input}</textarea>
                 <!--<button type="button" id="send_button">发送</button>-->
 
         </div>
-        <div class="powBox"><p class="pow">Powered by 北岸的云</p><button type="button" class="btn send-btn" id="sendBtn" style="color: rgb(255, 255, 255); background: rgb(19, 201, 203);">发送</button></div>
+        <div class="powBox"><p class="pow">Powered by {lang htt_robot:copyright}</p><button type="button" class="btn send-btn" id="sendBtn" style="color: rgb(255, 255, 255); background: rgb(19, 201, 203);">{lang htt_robot:send_text}</button></div>
 
 
     </div>
+
+    <!--js需要的语言包-->
+    <input type="hidden" id="close_text" value="{lang htt_robot:close_text}">
+    <input type="hidden" id="error_empty" value="{lang htt_robot:error_empty}">
+    <input type="hidden" id="me" value="{lang htt_robot:me}">
+    <input type="hidden" id="robot_bug" value="{lang htt_robot:robot_bug}">
+    <input type="hidden" id="please_input" value="{lang htt_robot:please_input}">
 
 
 

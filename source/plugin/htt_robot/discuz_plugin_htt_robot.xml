@@ -142,7 +142,26 @@
 			<item id="installlang">
 			
 			<item id="error_curl"><![CDATA[插件工作需要curl模块]]></item>
+			
+			
+			
 			</item>
+			
+			<item id="templatelang">
+		<item id="zhichiVoice"><![CDATA[开/光 声音]]></item>
+		<item id="zhichiMin"><![CDATA[最小化]]></item>
+		<item id="zhichiMax"><![CDATA[最大化]]></item>
+		<item id="zhichiClose"><![CDATA[关闭会话]]></item>
+		<item id="please_input"><![CDATA[请输入...]]></item>
+		<item id="copyright"><![CDATA[北岸的云]]></item>
+		<item id="send_text"><![CDATA[发送]]></item>
+		
+		<item id="close_text"><![CDATA[嘻嘻,这里只有关闭功能，要离开我吗?呜呜呜。。。]]></item>
+		<item id="error_empty"><![CDATA[内容不可以为空哟]]></item>
+		<item id="me"><![CDATA[我]]></item>
+		<item id="robot_bug"><![CDATA[哎呀,脑袋坏掉了，请联系我的主人]]></item>
+		
+	</item>
 			
 			
 		
