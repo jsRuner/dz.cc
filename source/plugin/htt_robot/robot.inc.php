@@ -14,9 +14,13 @@ if (!defined('IN_DISCUZ')) {
     exit('Access Denied');
 }
 
+if($_POST['formhash']!= FORMHASH) {
+    showmessage('undefined_action');
+}
 
 
 include_once DISCUZ_ROOT.'./source/plugin/htt_robot/function.inc.php';
+
 
 
 //
@@ -35,12 +39,16 @@ $check = $var['htt_robot']['is_show'];  //1隐藏 2启用
 $key = $tuling_key;
 
 //$info = $_POST['msg'];
-//增加参数获取安全。
-$info = $_G['gp_msg'];
+$info = $_POST['msg'];
 
 $url = 'http://www.tuling123.com/openapi/api?key=' . $key . '&info=' . urlencode($info);
 
+//优先使用自带的dz请求。
+$replystr = dfsockopen($url);
+if(empty($replystr)){
 $replystr = curl_html($url);
+	
+}
 
 $replyarr = json_decode($replystr, true);
 

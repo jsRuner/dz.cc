@@ -39,6 +39,9 @@ jq(window).load(function(){
     var robot_bug = jq('#robot_bug').val();
     var please_input = jq('#please_input').val();
 
+    var formhashxx = jq('#formhash').val();
+
+
     //console.log(host);
 
     //打开机器人。
@@ -77,10 +80,10 @@ jq(window).load(function(){
         }
 
 
-        console.log(msg);
+        //console.log(msg);
         //输出一下滚动条的位置。
-        console.log(msg_list[0].scrollTop)
-        console.log(msg_list[0].scrollHeight) //滚动条的高度。如果超出多少。则修改距离顶部
+        //console.log(msg_list[0].scrollTop)
+        //console.log(msg_list[0].scrollHeight) //滚动条的高度。如果超出多少。则修改距离顶部
 
         var sh = msg_list[0].scrollHeight;
 
@@ -97,26 +100,32 @@ jq(window).load(function(){
         jq.ajax({
             type: 'POST',
             url: 'http://'+host+'/plugin.php?id=htt_robot:robot',
-            data: {msg:msg},
+            data: {msg:msg,formhash:formhashxx},
             success: function(data){
 
                 var robot = ' <li class="robot"> <span>'+robot_name+'</span> <div>'+data.msg+'</div></li>';
                 msg_list.append(robot);
                 console.log(msg_list[0].scrollTop)
                 console.log(msg_list[0].scrollHeight) //滚动条的高度。如果超出多少。则修改距离顶部
-                var eh = msg_list[0].scrollHeight;
-                msg_list[0].scrollTop = msg_list[0].scrollTop+(eh-sh);
+                //var eh = msg_list[0].scrollHeight;
+                //msg_list[0].scrollTop = msg_list[0].scrollTop+(eh-sh);
             },
             dataType: 'json',
             error:function(XMLHttpRequest, textStatus, errorThrown){
                 var robot = ' <li class="robot"> <span>'+robot_name+'</span> <div>'+robot_bug+'</div></li>';
                 msg_list.append(robot);
-                //msg_list[0].scrollTop = msg_list[0].scrollTop+330;
+                //var eh = msg_list[0].scrollHeight;
+                //msg_list[0].scrollTop = msg_list[0].scrollTop+(eh-sh);
 
             },
             complete:function(XMLHttpRequest, textStatus){
                 //请求完成后。开启按钮。
                 send_btn.attr('disabled',false)
+
+
+
+                var eh = msg_list[0].scrollHeight;
+                msg_list[0].scrollTop = msg_list[0].scrollTop+(eh-sh);
 
             }
 
